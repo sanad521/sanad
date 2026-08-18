@@ -2,440 +2,1095 @@
 <html lang="ar" dir="rtl">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>موقع سند للأمن الرقمي</title>
+    <title>SANAD CYBER | موقع سند للأمن الرقمي</title>
 
-    <!-- Counter.dev -->
-    <script src="https://cdn.counter.dev/script.js"
-            data-id="f4579075-e6c3-49ee-affd-2a971af6a6c5"
-            data-utcoffset="1"></script>
+    <!-- ==============================
+         Counter.dev - إحصائيات الزيارات
+         ============================== -->
+
+    <script
+        src="https://cdn.counter.dev/script.js"
+        data-id="f4579075-e6c3-49ee-affd-2a971af6a6c5"
+        data-utcoffset="1">
+    </script>
+
 
     <style>
-        body {
-            font-family: sans-serif;
-            background-color: #0f172a;
-            color: #e2e8f0;
-            margin: 0;
-            padding: 0;
-            text-align: center;
+
+        /* =====================================
+           الإعدادات العامة
+           ===================================== */
+
+        * {
+            box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            transition: background 0.3s, color 0.3s;
+        }
+
+
+        /* =====================================
+           الوضع الفاتح
+           ===================================== */
+
+        body.light {
+            background: #f1f5f9;
+            color: #0f172a;
+        }
+
+
+        /* =====================================
+           الهيدر
+           ===================================== */
+
         header {
-            background-color: #1e293b;
-            padding: 40px 20px;
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #1e293b
+            );
+
+            padding: 55px 20px;
+
+            text-align: center;
+
             border-bottom: 3px solid #00f2fe;
         }
 
-        h1 {
-            color: #00f2fe;
-            margin: 0;
-            font-size: 28px;
+        body.light header {
+            background: linear-gradient(
+                135deg,
+                #ffffff,
+                #e2e8f0
+            );
         }
 
-        h2 {
-            color: #38bdf8;
-            margin-top: 40px;
-            border-bottom: 1px dashed #38bdf8;
-            padding-bottom: 10px;
+        header h1 {
+            margin: 0;
+
+            font-size: 34px;
+
+            color: #00f2fe;
         }
 
         .name-highlight {
             color: #f59e0b;
-            font-weight: bold;
         }
 
-        .container {
-            padding: 20px;
-            max-width: 650px;
-            margin: auto;
-        }
+        header p {
+            max-width: 750px;
 
-        .card {
-            background-color: #1e293b;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 10px;
-            border-left: 5px solid #00f2fe;
-            text-align: right;
-        }
+            margin: 20px auto 0;
 
-        .card h3 {
-            color: #00f2fe;
-            margin-top: 0;
-            font-size: 18px;
-        }
+            line-height: 1.9;
 
-        .card p {
-            margin: 5px 0 0 0;
-            line-height: 1.6;
             color: #cbd5e1;
+
+            font-size: 17px;
         }
 
-        .faq-accordion {
-            width: 100%;
-            margin-top: 15px;
+        body.light header p {
+            color: #475569;
         }
 
-        .faq-item {
-            background-color: #1e293b;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            overflow: hidden;
-            text-align: right;
-            border-right: 5px solid #f59e0b;
+
+        /* =====================================
+           شريط التنقل
+           ===================================== */
+
+        .navbar {
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            background: rgba(15, 23, 42, 0.95);
+
+            backdrop-filter: blur(12px);
+
+            padding: 10px;
+
+            text-align: center;
+
+            border-bottom: 1px solid #334155;
         }
 
-        .faq-question {
-            background-color: #1e293b;
-            color: #f59e0b;
-            padding: 15px;
-            width: 100%;
+        body.light .navbar {
+            background: rgba(255,255,255,0.95);
+        }
+
+        .nav-btn {
             border: none;
-            text-align: right;
-            font-size: 16px;
-            font-weight: bold;
+
+            padding: 10px 14px;
+
+            margin: 4px;
+
+            border-radius: 8px;
+
             cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            outline: none;
-        }
 
-        .faq-question::after {
-            content: '➕';
-            font-size: 12px;
-            color: #f59e0b;
-        }
+            font-weight: bold;
 
-        .faq-item.active .faq-question::after {
-            content: '➖';
-        }
+            background: #1e293b;
 
-        .faq-answer {
-            padding: 0 15px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-            background-color: #111827;
-        }
-
-        .faq-answer p {
-            padding: 15px 0;
-            margin: 0;
-            line-height: 1.6;
             color: #e2e8f0;
         }
 
-        .btn-social {
-            display: inline-block;
-            background: #00f2fe;
+        body.light .nav-btn {
+            background: #e2e8f0;
             color: #0f172a;
-            padding: 12px 25px;
-            margin: 20px 10px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
         }
 
-        .btn-social:hover {
+        .nav-btn:hover {
+            background: #00f2fe;
+
+            color: #0f172a;
+        }
+
+
+        /* =====================================
+           الحاوية
+           ===================================== */
+
+        .container {
+            width: 92%;
+
+            max-width: 900px;
+
+            margin: auto;
+
+            padding: 20px 0 50px;
+        }
+
+
+        /* =====================================
+           العناوين
+           ===================================== */
+
+        h2 {
+            margin-top: 45px;
+
+            color: #38bdf8;
+
+            border-bottom: 1px dashed #38bdf8;
+
+            padding-bottom: 12px;
+        }
+
+        h3 {
+            color: #00f2fe;
+        }
+
+
+        /* =====================================
+           الكروت
+           ===================================== */
+
+        .card {
+            background: #1e293b;
+
+            padding: 22px;
+
+            margin: 15px 0;
+
+            border-radius: 12px;
+
+            border-right: 5px solid #00f2fe;
+
+            text-align: right;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.15);
+
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+        }
+
+        body.light .card {
+            background: #ffffff;
+        }
+
+        .card p {
+            line-height: 1.8;
+
+            color: #cbd5e1;
+        }
+
+        body.light .card p {
+            color: #475569;
+        }
+
+
+        /* =====================================
+           الأزرار
+           ===================================== */
+
+        .btn {
+            border: none;
+
+            padding: 12px 20px;
+
+            margin: 5px;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            transition: 0.2s;
+        }
+
+        .btn-primary {
+            background: #00f2fe;
+
+            color: #0f172a;
+        }
+
+        .btn-primary:hover {
             background: #38bdf8;
         }
 
-        footer {
-            margin-top: 40px;
+        .btn-orange {
+            background: #f59e0b;
+
+            color: #111827;
+        }
+
+        .btn-danger {
+            background: #ef4444;
+
+            color: white;
+        }
+
+
+        /* =====================================
+           البحث
+           ===================================== */
+
+        .search-box {
+            width: 100%;
+
+            padding: 16px;
+
+            border: 2px solid #38bdf8;
+
+            border-radius: 10px;
+
+            background: #111827;
+
+            color: white;
+
+            font-size: 16px;
+
+            outline: none;
+        }
+
+        body.light .search-box {
+            background: white;
+
+            color: #0f172a;
+        }
+
+
+        /* =====================================
+           إحصائيات الموقع
+           ===================================== */
+
+        .stats {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 12px;
+
+            margin-top: 20px;
+        }
+
+        .stat {
+            background: #1e293b;
+
             padding: 20px;
-            background-color: #020617;
+
+            border-radius: 12px;
+
+            text-align: center;
+        }
+
+        body.light .stat {
+            background: white;
+        }
+
+        .stat-number {
+            display: block;
+
+            font-size: 28px;
+
+            color: #00f2fe;
+
+            font-weight: bold;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =====================================
+           FAQ
+           ===================================== */
+
+        .faq-item {
+            background: #1e293b;
+
+            margin-bottom: 10px;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            border-right: 5px solid #f59e0b;
+        }
+
+        body.light .faq-item {
+            background: white;
+        }
+
+        .faq-question {
+            width: 100%;
+
+            border: none;
+
+            background: transparent;
+
+            color: #f59e0b;
+
+            padding: 17px;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            text-align: right;
+
+            display: flex;
+
+            justify-content: space-between;
+        }
+
+        .faq-question::after {
+            content: "➕";
+        }
+
+        .faq-item.active .faq-question::after {
+            content: "➖";
+        }
+
+        .faq-answer {
+            max-height: 0;
+
+            overflow: hidden;
+
+            transition: max-height 0.3s ease;
+
+            background: #111827;
+        }
+
+        body.light .faq-answer {
+            background: #e2e8f0;
+        }
+
+        .faq-answer p {
+            padding: 15px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================
+           اختبار الأمان
+           ===================================== */
+
+        .quiz {
+            background: #1e293b;
+
+            padding: 25px;
+
+            border-radius: 15px;
+        }
+
+        body.light .quiz {
+            background: white;
+        }
+
+        .question {
+            background: #111827;
+
+            padding: 18px;
+
+            border-radius: 10px;
+
+            margin-bottom: 15px;
+
+            text-align: right;
+        }
+
+        body.light .question {
+            background: #e2e8f0;
+        }
+
+        .question label {
+            display: block;
+
+            padding: 8px;
+
+            cursor: pointer;
+        }
+
+        #quizResult {
+            margin-top: 20px;
+
+            font-size: 20px;
+
+            font-weight: bold;
+        }
+
+
+        /* =====================================
+           الروابط المشبوهة
+           ===================================== */
+
+        .url-box {
+            width: 100%;
+
+            padding: 14px;
+
+            border-radius: 8px;
+
+            border: 1px solid #64748b;
+
+            background: #111827;
+
+            color: white;
+
+            font-size: 15px;
+        }
+
+        body.light .url-box {
+            background: white;
+
+            color: #0f172a;
+        }
+
+        #urlResult {
+            margin-top: 15px;
+
+            padding: 15px;
+
+            border-radius: 10px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================
+           النقاط والشارات
+           ===================================== */
+
+        .points-box {
+            background: #1e293b;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            text-align: center;
+        }
+
+        body.light .points-box {
+            background: white;
+        }
+
+        .points {
+            color: #f59e0b;
+
+            font-size: 30px;
+
+            font-weight: bold;
+        }
+
+        .badge {
+            display: inline-block;
+
+            background: #111827;
+
+            padding: 10px 15px;
+
+            margin: 5px;
+
+            border-radius: 20px;
+
             color: #94a3b8;
         }
+
+        body.light .badge {
+            background: #e2e8f0;
+        }
+
+        .badge.unlocked {
+            color: #00f2fe;
+
+            border: 1px solid #00f2fe;
+        }
+
+
+        /* =====================================
+           اللغات
+           ===================================== */
+
+        .language-box {
+            text-align: center;
+
+            margin: 20px 0;
+        }
+
+
+        /* =====================================
+           Footer
+           ===================================== */
+
+        footer {
+            background: #020617;
+
+            padding: 35px 20px;
+
+            text-align: center;
+
+            color: #94a3b8;
+        }
+
+
+        /* =====================================
+           Responsive
+           ===================================== */
+
+        @media (max-width: 650px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                width: 94%;
+            }
+
+        }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <header>
+
+    <!-- =====================================
+         شريط التنقل
+         ===================================== -->
+
+    <nav class="navbar">
+
+        <button class="nav-btn" onclick="goTo('home')">
+            🏠 الرئيسية
+        </button>
+
+        <button class="nav-btn" onclick="goTo('quiz')">
+            🧪 اختبار
+        </button>
+
+        <button class="nav-btn" onclick="goTo('help')">
+            🚨 المساعدة
+        </button>
+
+        <button class="nav-btn" onclick="goTo('about')">
+            👤 عن سند
+        </button>
+
+        <button class="nav-btn" onclick="toggleTheme()">
+            🌙 / ☀️
+        </button>
+
+    </nav>
+
+
+    <!-- =====================================
+         الرئيسية
+         ===================================== -->
+
+    <header id="home">
+
         <h1>
+
             🔒 موقع المبرمج
-            <span class="name-highlight">سند</span>
+
+            <span class="name-highlight">
+                سند
+            </span>
+
             للأمن الرقمي
+
         </h1>
 
+
         <p>
-            مرحباً بكم! أنا سند، أشارككم هنا الموسوعة الشاملة
-            لنصائح الحماية لتأمين حساباتكم وهواتفكم من الاختراق والتجسس.
+
+            مرحباً بكم في SANAD CYBER 👋
+
+            <br>
+
+            موقع توعوي يساعدك على فهم أساسيات
+            الأمن الرقمي وحماية حساباتك وهاتفك.
+
         </p>
+
     </header>
 
 
-    <div class="container">
+    <main class="container">
+
+
+        <!-- =====================================
+             البحث
+             ===================================== -->
+
+        <h2>🔍 ابحث في نصائح الموقع</h2>
+
+        <input
+            id="searchBox"
+            class="search-box"
+            type="text"
+            placeholder="ابحث عن: واتساب، كلمات المرور، Wi-Fi..."
+            oninput="searchTips()"
+        >
+
+
+        <!-- =====================================
+             إحصائيات
+             ===================================== -->
+
+        <div class="stats">
+
+            <div class="stat">
+
+                <span
+                    class="stat-number"
+                    id="tipCount">
+                    15
+                </span>
+
+                نصيحة أمنية
+
+            </div>
+
+
+            <div class="stat">
+
+                <span
+                    class="stat-number"
+                    id="pointsTop">
+                    0
+                </span>
+
+                نقاطك
+
+            </div>
+
+
+            <div class="stat">
+
+                <span class="stat-number">
+                    🔐
+                </span>
+
+                حماية رقمية
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================
+             القسم الأول
+             ===================================== -->
 
         <h2>🛡️ أولاً: حماية الحسابات الشخصية</h2>
 
-        <div class="card">
-            <h3>1. تفعيل المصادقة الثنائية (2FA)</h3>
+
+        <div class="card tip">
+
+            <h3>
+                1. تفعيل المصادقة الثنائية 2FA
+            </h3>
+
             <p>
-                قم بتفعيل ميزة المصادقة الثنائية لحماية حساباتك
-                وإضافة طبقة أمان إضافية عند تسجيل الدخول.
+                فعّل المصادقة الثنائية في الحسابات المهمة
+                لإضافة طبقة حماية إضافية.
             </p>
+
         </div>
 
-        <div class="card">
-            <h3>2. تجنب كلمات المرور الموحدة</h3>
+
+        <div class="card tip">
+
+            <h3>
+                2. لا تستعمل نفس كلمة المرور
+            </h3>
+
             <p>
-                لا تستخدم نفس كلمة المرور لفيسبوك وإنستغرام والإيميل؛
-                استخدم كلمات مرور مختلفة لكل حساب.
+                استعمل كلمات مرور مختلفة للحسابات المهمة.
             </p>
+
         </div>
 
-        <div class="card">
-            <h3>3. قاعدة كلمات المرور القوية</h3>
+
+        <div class="card tip">
+
+            <h3>
+                3. استعمل كلمات مرور قوية
+            </h3>
+
             <p>
-                استخدم كلمات مرور طويلة وفريدة تحتوي على أرقام
-                وحروف ورموز، وتجنب المعلومات السهلة التخمين.
+                اجعل كلمات المرور طويلة وفريدة
+                ولا تستعمل معلومات سهلة التخمين.
             </p>
+
         </div>
 
-        <div class="card">
-            <h3>4. البريد الإلكتروني الأساسي</h3>
+
+        <div class="card tip">
+
+            <h3>
+                4. احمِ البريد الإلكتروني
+            </h3>
+
             <p>
-                احمِ البريد الإلكتروني المرتبط بحساباتك لأنه مهم
-                لاستعادة الحسابات وتغيير كلمات المرور.
+                البريد الإلكتروني مهم لاستعادة حساباتك،
+                لذلك يجب حمايته جيداً.
             </p>
+
         </div>
 
-        <div class="card">
-            <h3>5. مراجعة الأجهزة النشطة بانتظام</h3>
+
+        <div class="card tip">
+
+            <h3>
+                5. راجع الأجهزة النشطة
+            </h3>
+
             <p>
                 راجع الأجهزة التي سجلت الدخول إلى حساباتك
-                وسجّل الخروج من أي جهاز غير معروف.
+                وسجّل الخروج من الأجهزة غير المعروفة.
             </p>
+
         </div>
 
+
+        <!-- =====================================
+             حماية الأجهزة
+             ===================================== -->
 
         <h2>📱 ثانياً: تأمين الهواتف والأجهزة</h2>
 
-        <div class="card">
-            <h3>6. الحذر من ملفات APK العشوائية</h3>
-            <p>
-                تجنب تثبيت التطبيقات من مصادر مجهولة،
-                وتأكد دائماً من موثوقية التطبيق والمصدر.
-            </p>
-        </div>
 
-        <div class="card">
-            <h3>7. مراقبة صلاحيات التطبيقات</h3>
-            <p>
-                راجع صلاحيات التطبيقات ولا تمنح التطبيق صلاحيات
-                لا يحتاج إليها مثل الكاميرا أو الميكروفون.
-            </p>
-        </div>
+        <div class="card tip">
 
-        <div class="card">
-            <h3>8. تحديث نظام التشغيل بانتظام</h3>
-            <p>
-                حافظ على تحديث الهاتف والتطبيقات للحصول على
-                آخر الإصلاحات والتحديثات الأمنية.
-            </p>
-        </div>
+            <h3>
+                6. الحذر من ملفات APK
+            </h3>
 
-        <div class="card">
-            <h3>9. الحذر من شبكات Wi-Fi العامة</h3>
             <p>
-                تجنب إدخال معلومات حساسة عند استخدام شبكات
-                Wi-Fi عامة وغير موثوقة.
+                تجنب التطبيقات من المصادر المجهولة
+                وتأكد من موثوقية المصدر.
             </p>
-        </div>
 
-        <div class="card">
-            <h3>10. قفل الشاشة</h3>
-            <p>
-                استخدم رمز PIN قوي أو بصمة الإصبع أو وسائل القفل
-                المتاحة لحماية بيانات الهاتف.
-            </p>
         </div>
 
 
-        <h2>🌐 ثالثاً: التوعية الأمنية ضد الهاكرز</h2>
+        <div class="card tip">
 
-        <div class="card">
-            <h3>11. كشف صفحات التصيد المزورة</h3>
-            <p>
-                تحقق من عنوان الموقع قبل إدخال كلمة المرور أو
-                أي معلومات شخصية.
-            </p>
-        </div>
+            <h3>
+                7. راقب صلاحيات التطبيقات
+            </h3>
 
-        <div class="card">
-            <h3>12. تجنب روابط الجوائز الوهمية</h3>
             <p>
-                لا تضغط على الروابط التي تعدك بجوائز أو أموال
-                إذا كان مصدرها غير موثوق.
+                لا تمنح التطبيق صلاحيات لا يحتاج إليها.
             </p>
-        </div>
 
-        <div class="card">
-            <h3>13. عدم مشاركة الرموز السرية OTP</h3>
-            <p>
-                لا تشارك رمز التفعيل الذي يصلك في رسالة مع أي شخص،
-                حتى لو ادعى أنه من الدعم الفني.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>14. الحذر من الملفات المشبوهة</h3>
-            <p>
-                لا تفتح الملفات غير المتوقعة التي تصلك من أشخاص
-                أو حسابات مجهولة.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>15. النسخ الاحتياطي للبيانات</h3>
-            <p>
-                احتفظ بنسخة احتياطية من الصور والملفات المهمة
-                على وسيلة تخزين أو خدمة سحابية موثوقة.
-            </p>
         </div>
 
 
-        <h2>❓ رابعاً: أسئلة شائعة في الحماية الرقمية</h2>
+        <div class="card tip">
 
-        <div class="faq-accordion">
+            <h3>
+                8. حدّث الهاتف
+            </h3>
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    كيف أعرف أن هاتفي مخترق أو مراقب؟
-                </button>
+            <p>
+                حافظ على تحديث نظام التشغيل والتطبيقات
+                للحصول على الإصلاحات الأمنية.
+            </p>
 
-                <div class="faq-answer">
-                    <p>
-                        بعض العلامات المحتملة تشمل استهلاكاً غير معتاد
-                        للبطارية أو الإنترنت، ظهور تطبيقات غير معروفة،
-                        أو سلوكاً غريباً في الهاتف. هذه العلامات وحدها
-                        لا تثبت وجود اختراق.
-                    </p>
-                </div>
+        </div>
+
+
+        <div class="card tip">
+
+            <h3>
+                9. احذر شبكات Wi-Fi العامة
+            </h3>
+
+            <p>
+                تجنب إدخال معلومات حساسة عبر شبكات
+                عامة وغير موثوقة.
+            </p>
+
+        </div>
+
+
+        <div class="card tip">
+
+            <h3>
+                10. قفل الشاشة
+            </h3>
+
+            <p>
+                استعمل PIN قوي أو بصمة لحماية هاتفك.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             التوعية
+             ===================================== -->
+
+        <h2>🌐 ثالثاً: التوعية ضد الاحتيال</h2>
+
+
+        <div class="card tip">
+
+            <h3>
+                11. انتبه للتصيد الإلكتروني
+            </h3>
+
+            <p>
+                تحقق من عنوان الموقع قبل إدخال
+                كلمة المرور أو المعلومات الشخصية.
+            </p>
+
+        </div>
+
+
+        <div class="card tip">
+
+            <h3>
+                12. لا تصدق الجوائز الوهمية
+            </h3>
+
+            <p>
+                لا تضغط على روابط الجوائز والهدايا
+                من مصادر مجهولة.
+            </p>
+
+        </div>
+
+
+        <div class="card tip">
+
+            <h3>
+                13. لا تشارك رمز OTP
+            </h3>
+
+            <p>
+                لا تعطي رمز التفعيل لأي شخص.
+            </p>
+
+        </div>
+
+
+        <div class="card tip">
+
+            <h3>
+                14. احذر الملفات الغريبة
+            </h3>
+
+            <p>
+                لا تفتح الملفات غير المتوقعة
+                من أشخاص مجهولين.
+            </p>
+
+        </div>
+
+
+        <div class="card tip">
+
+            <h3>
+                15. اعمل نسخاً احتياطية
+            </h3>
+
+            <p>
+                احتفظ بنسخة احتياطية من ملفاتك وصورك المهمة.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             Android / iPhone
+             ===================================== -->
+
+        <h2>📱 رابعاً: حماية Android و iPhone</h2>
+
+
+        <div class="card">
+
+            <h3>
+                🤖 Android
+            </h3>
+
+            <p>
+                حافظ على تحديث النظام، راجع صلاحيات التطبيقات،
+                واستعمل مصادر موثوقة لتحميل التطبيقات.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                🍎 iPhone
+            </h3>
+
+            <p>
+                حافظ على تحديث iOS، فعّل رمز القفل والمصادقة
+                الثنائية لحساب Apple، وراجع صلاحيات التطبيقات.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================
+             فحص الرابط من ناحية توعوية
+             ===================================== -->
+
+        <h2>🔗 تحقق من رابط مشبوه</h2>
+
+
+        <div class="card">
+
+            <p>
+                هذا الفحص توعوي فقط. لا ترسل كلمات مرور
+                أو معلومات شخصية.
+            </p>
+
+
+            <input
+                id="urlInput"
+                class="url-box"
+                type="text"
+                placeholder="مثال: https://example.com"
+            >
+
+
+            <br>
+
+
+            <button
+                class="btn btn-primary"
+                onclick="checkURL()">
+
+                🔎 تحليل الرابط
+
+            </button>
+
+
+            <div id="urlResult"></div>
+
+        </div>
+
+
+        <!-- =====================================
+             اختبار الأمان
+             ===================================== -->
+
+        <h2 id="quiz">
+            🧪 خامساً: اختبر مستوى وعيك الأمني
+        </h2>
+
+
+        <div class="quiz">
+
+
+            <div class="question">
+
+                <b>
+                    1. وصلك رمز OTP بدون ما تطلبه؟
+                </b>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="0">
+
+                    نعطيه للشخص الذي طلبه.
+
+                </label>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="q1"
+                        value="1">
+
+                    لا أشاركه مع أي شخص.
+
+                </label>
+
             </div>
 
 
-            <div class="faq-item">
-                <button class="faq-question">
-                    ماذا أفعل إذا تم اختراق حسابي؟
-                </button>
+            <div class="question">
 
-                <div class="faq-answer">
-                    <p>
-                        غيّر كلمة المرور من جهاز موثوق، سجّل الخروج
-                        من الجلسات غير المعروفة، وفعّل المصادقة الثنائية.
-                        استخدم مركز المساعدة الرسمي للخدمة إذا لزم الأمر.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    هل يمكن اختراقي بمجرد معرفة رقم هاتفي؟
-                </button>
-
-                <div class="faq-answer">
-                    <p>
-                        معرفة رقم الهاتف وحدها لا تعني أن الهاتف أصبح
-                        مخترقاً، لكن يمكن استغلال الرقم في محاولات
-                        الهندسة الاجتماعية للحصول على معلومات أو رموز سرية.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    هل Antivirus مفيد للهاتف؟
-                </button>
-
-                <div class="faq-answer">
-                    <p>
-                        تطبيقات الحماية الموثوقة يمكن أن تساعد في اكتشاف
-                        بعض البرمجيات الضارة، لكن تحديث الهاتف وتحميل
-                        التطبيقات من مصادر موثوقة يبقى مهماً جداً.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    كيف أحمي WhatsApp؟
-                </button>
-
-                <div class="faq-answer">
-                    <p>
-                        فعّل التحقق بخطوتين من إعدادات واتساب،
-                        واستخدم رمز PIN خاصاً بك، ولا تشارك رمز
-                        التفعيل الذي يصلك عبر SMS مع أي شخص.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-
-        <h2>🌐 تواصل مع المبرمج سند</h2>
-
-        <p>
-            إذا كان لديك أي استفسار تقني أو تريد معرفة المزيد
-            عن الحماية الرقمية، يمكنك متابعتي عبر:
-        </p>
-
-        <a
-            href="https://facebook.com"
-            class="btn-social"
-            target="_blank"
-            rel="noopener noreferrer">
-            حسابي على فيسبوك
-        </a>
-
-    </div>
-
-
-    <footer>
-        🔐 موقع سند للأمن الرقمي
-        <br>
-        جميع الحقوق محفوظة © 2026
-    </footer>
-
-
-    <script>
-        const faqQuestions =
-            document.querySelectorAll(".faq-question");
-
-        faqQuestions.forEach(question => {
-
-            question.addEventListener("click", () => {
-
-                const item = question.parentElement;
-                const answer = question.nextElementSibling;
-
-                item.classList.toggle("active");
-
-                if (item.classList.contains("active")) {
-
-                    answer.style.maxHeight =
-                        answer.scrollHeight + "px";
-
-                } else {
-
-                    answer.style.maxHeight = "0px";
-
-                }
-
-            });
-
-        });
-    </script>
-
-</body>
-
-</html>
+                <b>
+                    2. وصل
