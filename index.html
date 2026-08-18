@@ -2,12 +2,13 @@
 <html lang="ar" dir="rtl">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>SANAD CYBER | موقع سند للأمن الرقمي</title>
 
-<!-- Counter.dev -->
 <script
 src="https://cdn.counter.dev/script.js"
 data-id="f4579075-e6c3-49ee-affd-2a971af6a6c5"
@@ -16,524 +17,372 @@ data-utcoffset="1">
 
 <style>
 
-/* =========================
-   GENERAL
-========================= */
-
 *{
-    box-sizing:border-box;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#0f172a;
-    color:#e2e8f0;
-    transition:.3s;
+margin:0;
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:#e2e8f0;
+transition:.3s;
 }
 
 body.light{
-    background:#f1f5f9;
-    color:#0f172a;
+background:#f1f5f9;
+color:#0f172a;
 }
 
-/* =========================
-   HEADER
-========================= */
-
 header{
-    padding:55px 20px;
-    text-align:center;
-    background:linear-gradient(135deg,#0f172a,#1e293b);
-    border-bottom:3px solid #00f2fe;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+padding:55px 20px;
+text-align:center;
+border-bottom:3px solid #00f2fe;
 }
 
 body.light header{
-    background:linear-gradient(135deg,#fff,#e2e8f0);
+background:linear-gradient(135deg,#fff,#e2e8f0);
 }
 
 header h1{
-    margin:0;
-    font-size:34px;
-    color:#00f2fe;
+margin:0;
+font-size:34px;
+color:#00f2fe;
 }
 
 .name-highlight{
-    color:#f59e0b;
+color:#f59e0b;
 }
 
 header p{
-    max-width:750px;
-    margin:20px auto 0;
-    line-height:1.9;
-    color:#cbd5e1;
-    font-size:17px;
+max-width:750px;
+margin:20px auto 0;
+line-height:1.9;
+color:#cbd5e1;
+font-size:17px;
 }
 
 body.light header p{
-    color:#475569;
+color:#475569;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-
 .navbar{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(15,23,42,.96);
-    backdrop-filter:blur(12px);
-    padding:10px;
-    text-align:center;
-    border-bottom:1px solid #334155;
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(15,23,42,.96);
+backdrop-filter:blur(12px);
+padding:10px;
+text-align:center;
+border-bottom:1px solid #334155;
 }
 
 body.light .navbar{
-    background:rgba(255,255,255,.96);
+background:rgba(255,255,255,.96);
 }
 
 .nav-btn{
-    border:none;
-    padding:11px 15px;
-    margin:4px;
-    border-radius:9px;
-    cursor:pointer;
-    font-weight:bold;
-    background:#1e293b;
-    color:#e2e8f0;
-    transition:.2s;
+border:none;
+padding:10px 14px;
+margin:4px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+background:#1e293b;
+color:#e2e8f0;
 }
 
 body.light .nav-btn{
-    background:#e2e8f0;
-    color:#0f172a;
+background:#e2e8f0;
+color:#0f172a;
 }
 
 .nav-btn:hover{
-    background:#00f2fe;
-    color:#0f172a;
+background:#00f2fe;
+color:#0f172a;
 }
 
-/* =========================
-   CONTAINER
-========================= */
-
 .container{
-    width:92%;
-    max-width:900px;
-    margin:auto;
-    padding:20px 0 70px;
+width:92%;
+max-width:900px;
+margin:auto;
+padding:20px 0 50px;
 }
 
 h2{
-    margin-top:45px;
-    color:#38bdf8;
-    border-bottom:1px dashed #38bdf8;
-    padding-bottom:12px;
+margin-top:45px;
+color:#38bdf8;
+border-bottom:1px dashed #38bdf8;
+padding-bottom:12px;
 }
 
 h3{
-    color:#00f2fe;
+color:#00f2fe;
 }
-
-/* =========================
-   CARDS
-========================= */
 
 .card{
-    background:#1e293b;
-    padding:22px;
-    margin:15px 0;
-    border-radius:12px;
-    border-right:5px solid #00f2fe;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
-    transition:.2s;
-}
-
-.card:hover{
-    transform:translateY(-2px);
+background:#1e293b;
+padding:22px;
+margin:15px 0;
+border-radius:12px;
+border-right:5px solid #00f2fe;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
 }
 
 body.light .card{
-    background:white;
+background:#fff;
 }
 
 .card p{
-    line-height:1.8;
-    color:#cbd5e1;
+line-height:1.8;
+color:#cbd5e1;
 }
 
 body.light .card p{
-    color:#475569;
+color:#475569;
 }
 
-/* =========================
-   BUTTONS
-========================= */
-
 .btn{
-    border:none;
-    padding:12px 20px;
-    margin:5px;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:15px;
-    font-weight:bold;
+border:none;
+padding:12px 20px;
+margin:5px;
+border-radius:8px;
+cursor:pointer;
+font-size:15px;
+font-weight:bold;
 }
 
 .btn-primary{
-    background:#00f2fe;
-    color:#0f172a;
+background:#00f2fe;
+color:#0f172a;
 }
 
 .btn-primary:hover{
-    background:#38bdf8;
+background:#38bdf8;
 }
 
 .btn-orange{
-    background:#f59e0b;
-    color:#111827;
+background:#f59e0b;
+color:#111827;
 }
 
-.btn-danger{
-    background:#ef4444;
-    color:white;
+.search-box,
+.url-box{
+width:100%;
+padding:15px;
+border:2px solid #38bdf8;
+border-radius:10px;
+background:#111827;
+color:white;
+font-size:16px;
+outline:none;
 }
 
-.btn-green{
-    background:#22c55e;
-    color:white;
+body.light .search-box,
+body.light .url-box{
+background:#fff;
+color:#0f172a;
 }
-
-/* =========================
-   SEARCH
-========================= */
-
-.search-box{
-    width:100%;
-    padding:16px;
-    border:2px solid #38bdf8;
-    border-radius:10px;
-    background:#111827;
-    color:white;
-    font-size:16px;
-    outline:none;
-}
-
-body.light .search-box{
-    background:white;
-    color:#0f172a;
-}
-
-/* =========================
-   STATS
-========================= */
 
 .stats{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:12px;
-    margin-top:20px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+margin-top:20px;
 }
 
 .stat{
-    background:#1e293b;
-    padding:20px;
-    border-radius:12px;
-    text-align:center;
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+text-align:center;
 }
 
 body.light .stat{
-    background:white;
+background:#fff;
 }
 
 .stat-number{
-    display:block;
-    font-size:28px;
-    color:#00f2fe;
-    font-weight:bold;
-    margin-bottom:5px;
+display:block;
+font-size:28px;
+color:#00f2fe;
+font-weight:bold;
+margin-bottom:5px;
 }
 
-/* =========================
-   FAQ
-========================= */
-
-.faq-item{
-    background:#1e293b;
-    margin-bottom:10px;
-    border-radius:10px;
-    overflow:hidden;
-    border-right:5px solid #f59e0b;
+.tip.hidden{
+display:none;
 }
-
-body.light .faq-item{
-    background:white;
-}
-
-.faq-question{
-    width:100%;
-    border:none;
-    background:transparent;
-    color:#f59e0b;
-    padding:17px;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-    text-align:right;
-    display:flex;
-    justify-content:space-between;
-}
-
-.faq-question::after{
-    content:"➕";
-}
-
-.faq-item.active .faq-question::after{
-    content:"➖";
-}
-
-.faq-answer{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height .3s ease;
-    background:#111827;
-}
-
-body.light .faq-answer{
-    background:#e2e8f0;
-}
-
-.faq-answer p{
-    padding:15px;
-    line-height:1.8;
-}
-
-/* =========================
-   QUIZ
-========================= */
 
 .quiz{
-    background:#1e293b;
-    padding:25px;
-    border-radius:15px;
+background:#1e293b;
+padding:25px;
+border-radius:15px;
 }
 
 body.light .quiz{
-    background:white;
+background:#fff;
 }
 
 .question{
-    background:#111827;
-    padding:18px;
-    border-radius:10px;
-    margin-bottom:15px;
+background:#111827;
+padding:18px;
+border-radius:10px;
+margin-bottom:15px;
+text-align:right;
 }
 
 body.light .question{
-    background:#e2e8f0;
+background:#e2e8f0;
 }
 
 .question label{
-    display:block;
-    padding:9px;
-    cursor:pointer;
+display:block;
+padding:10px;
+cursor:pointer;
 }
 
 #quizResult{
-    margin-top:20px;
-    font-size:20px;
-    font-weight:bold;
+display:none;
+margin-top:20px;
+padding:18px;
+border-radius:10px;
+background:#111827;
+color:#00f2fe;
+font-size:20px;
+font-weight:bold;
+text-align:center;
 }
 
-/* =========================
-   URL CHECKER
-========================= */
-
-.url-box{
-    width:100%;
-    padding:14px;
-    border-radius:8px;
-    border:1px solid #64748b;
-    background:#111827;
-    color:white;
-    font-size:15px;
+body.light #quizResult{
+background:#e2e8f0;
 }
 
-body.light .url-box{
-    background:white;
-    color:#0f172a;
+.url-result{
+margin-top:15px;
+padding:18px;
+border-radius:10px;
+line-height:1.8;
+display:none;
 }
 
-#urlResult{
-    margin-top:15px;
-    padding:15px;
-    border-radius:10px;
-    line-height:1.8;
+.safe{
+background:#064e3b;
+color:#a7f3d0;
 }
 
-/* =========================
-   POINTS
-========================= */
+.warning{
+background:#78350f;
+color:#fde68a;
+}
+
+.danger{
+background:#7f1d1d;
+color:#fecaca;
+}
+
+.faq-item{
+background:#1e293b;
+margin-bottom:10px;
+border-radius:10px;
+overflow:hidden;
+border-right:5px solid #f59e0b;
+}
+
+body.light .faq-item{
+background:#fff;
+}
+
+.faq-question{
+width:100%;
+border:none;
+background:transparent;
+color:#f59e0b;
+padding:17px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+text-align:right;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.faq-question::after{
+content:"➕";
+}
+
+.faq-item.active .faq-question::after{
+content:"➖";
+}
+
+.faq-answer{
+max-height:0;
+overflow:hidden;
+transition:max-height .3s ease;
+background:#111827;
+}
+
+body.light .faq-answer{
+background:#e2e8f0;
+}
+
+.faq-answer p{
+padding:15px;
+margin:0;
+line-height:1.8;
+}
 
 .points-box{
-    background:#1e293b;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+text-align:center;
 }
 
 body.light .points-box{
-    background:white;
+background:#fff;
 }
 
 .points{
-    color:#f59e0b;
-    font-size:30px;
-    font-weight:bold;
+color:#f59e0b;
+font-size:30px;
+font-weight:bold;
 }
-
-.badge{
-    display:inline-block;
-    background:#111827;
-    padding:10px 15px;
-    margin:5px;
-    border-radius:20px;
-    color:#94a3b8;
-}
-
-body.light .badge{
-    background:#e2e8f0;
-}
-
-.badge.unlocked{
-    color:#00f2fe;
-    border:1px solid #00f2fe;
-}
-
-/* =========================
-   HELP
-========================= */
-
-.help-box{
-    background:#1e293b;
-    padding:25px;
-    border-radius:15px;
-    border-right:5px solid #ef4444;
-}
-
-body.light .help-box{
-    background:white;
-}
-
-.help-box li{
-    margin:12px 0;
-    line-height:1.7;
-}
-
-/* =========================
-   ABOUT
-========================= */
-
-.about{
-    text-align:center;
-    background:#1e293b;
-    padding:30px;
-    border-radius:15px;
-}
-
-body.light .about{
-    background:white;
-}
-
-/* =========================
-   LANGUAGE
-========================= */
-
-.language-box{
-    text-align:center;
-    margin:20px 0;
-}
-
-.language-box select{
-    padding:10px;
-    border-radius:8px;
-}
-
-/* =========================
-   TOP BUTTON
-========================= */
-
-#topBtn{
-    position:fixed;
-    bottom:20px;
-    left:20px;
-    display:none;
-    width:45px;
-    height:45px;
-    border:none;
-    border-radius:50%;
-    background:#00f2fe;
-    color:#0f172a;
-    font-size:20px;
-    cursor:pointer;
-    z-index:999;
-}
-
-/* =========================
-   FOOTER
-========================= */
 
 footer{
-    background:#020617;
-    padding:35px 20px;
-    text-align:center;
-    color:#94a3b8;
+background:#020617;
+padding:35px 20px;
+text-align:center;
+color:#94a3b8;
 }
-
-footer a{
-    color:#00f2fe;
-    text-decoration:none;
-}
-
-/* =========================
-   MOBILE
-========================= */
 
 @media(max-width:650px){
 
-    header h1{
-        font-size:25px;
-    }
+header h1{
+font-size:25px;
+}
 
-    .stats{
-        grid-template-columns:1fr;
-    }
+.stats{
+grid-template-columns:1fr;
+}
 
-    .container{
-        width:94%;
-    }
-
-    .nav-btn{
-        padding:9px 11px;
-        font-size:13px;
-    }
+.container{
+width:94%;
+}
 
 }
 
 </style>
+
 </head>
 
 <body>
-
-<!-- =========================
-     NAVIGATION
-========================= -->
 
 <nav class="navbar">
 
@@ -545,8 +394,12 @@ footer a{
 🧪 اختبار
 </button>
 
-<button class="nav-btn" onclick="goTo('help')">
-🚨 المساعدة
+<button class="nav-btn" onclick="goTo('faq')">
+❓ الأسئلة
+</button>
+
+<button class="nav-btn" onclick="goTo('urlCheck')">
+🔗 فحص رابط
 </button>
 
 <button class="nav-btn" onclick="goTo('about')">
@@ -560,10 +413,6 @@ footer a{
 </nav>
 
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header id="home">
 
 <h1>
@@ -576,7 +425,7 @@ footer a{
 مرحباً بكم في SANAD CYBER 👋
 <br>
 موقع توعوي يساعدك على فهم أساسيات الأمن الرقمي
-وحماية حساباتك وهاتفك من المخاطر الرقمية.
+وحماية حساباتك وهاتفك.
 </p>
 
 </header>
@@ -584,10 +433,6 @@ footer a{
 
 <main class="container">
 
-
-<!-- =========================
-     SEARCH
-========================= -->
 
 <h2>🔍 ابحث في نصائح الموقع</h2>
 
@@ -599,10 +444,6 @@ placeholder="ابحث عن واتساب، كلمات المرور، Wi-Fi..."
 oninput="searchTips()"
 >
 
-
-<!-- =========================
-     STATISTICS
-========================= -->
 
 <div class="stats">
 
@@ -643,191 +484,89 @@ id="pointsTop">
 </div>
 
 
-<!-- =========================
-     TIPS 1-5
-========================= -->
-
 <h2>🛡️ أولاً: حماية الحسابات الشخصية</h2>
 
 <div class="card tip">
-
 <h3>1. تفعيل المصادقة الثنائية 2FA</h3>
-
-<p>
-فعّل المصادقة الثنائية في الحسابات المهمة
-لإضافة طبقة حماية إضافية.
-</p>
-
+<p>فعّل المصادقة الثنائية في الحسابات المهمة لإضافة طبقة حماية إضافية.</p>
 </div>
 
 <div class="card tip">
-
 <h3>2. لا تستعمل نفس كلمة المرور</h3>
-
-<p>
-استعمل كلمات مرور مختلفة للحسابات المهمة.
-</p>
-
+<p>استعمل كلمات مرور مختلفة للحسابات المهمة.</p>
 </div>
 
 <div class="card tip">
-
 <h3>3. استعمل كلمات مرور قوية</h3>
-
-<p>
-اجعل كلمات المرور طويلة وفريدة
-ولا تستعمل معلومات سهلة التخمين.
-</p>
-
+<p>اجعل كلمات المرور طويلة وفريدة ولا تستعمل معلومات سهلة التخمين.</p>
 </div>
 
 <div class="card tip">
-
 <h3>4. احمِ البريد الإلكتروني</h3>
-
-<p>
-البريد الإلكتروني مهم لاستعادة حساباتك،
-لذلك يجب حمايته جيداً.
-</p>
-
+<p>البريد الإلكتروني مهم لاستعادة حساباتك، لذلك يجب حمايته جيداً.</p>
 </div>
 
 <div class="card tip">
-
 <h3>5. راجع الأجهزة النشطة</h3>
-
-<p>
-راجع الأجهزة التي سجلت الدخول إلى حساباتك
-وسجّل الخروج من الأجهزة غير المعروفة.
-</p>
-
+<p>راجع الأجهزة التي سجلت الدخول إلى حساباتك وسجّل الخروج من الأجهزة غير المعروفة.</p>
 </div>
 
-
-<!-- =========================
-     TIPS 6-10
-========================= -->
 
 <h2>📱 ثانياً: تأمين الهواتف والأجهزة</h2>
 
 <div class="card tip">
-
 <h3>6. الحذر من ملفات APK</h3>
-
-<p>
-تجنب التطبيقات من المصادر المجهولة
-وتأكد من موثوقية المصدر.
-</p>
-
+<p>تجنب التطبيقات من المصادر المجهولة وتأكد من موثوقية المصدر.</p>
 </div>
 
 <div class="card tip">
-
 <h3>7. راقب صلاحيات التطبيقات</h3>
-
-<p>
-لا تمنح التطبيق صلاحيات لا يحتاج إليها.
-</p>
-
+<p>لا تمنح التطبيق صلاحيات لا يحتاج إليها.</p>
 </div>
 
 <div class="card tip">
-
 <h3>8. حدّث الهاتف</h3>
-
-<p>
-حافظ على تحديث نظام التشغيل والتطبيقات
-للحصول على الإصلاحات الأمنية.
-</p>
-
+<p>حافظ على تحديث نظام التشغيل والتطبيقات للحصول على الإصلاحات الأمنية.</p>
 </div>
 
 <div class="card tip">
-
 <h3>9. احذر شبكات Wi-Fi العامة</h3>
-
-<p>
-تجنب إدخال معلومات حساسة عبر شبكات
-عامة وغير موثوقة.
-</p>
-
+<p>تجنب إدخال معلومات حساسة عبر شبكات عامة وغير موثوقة.</p>
 </div>
 
 <div class="card tip">
-
 <h3>10. قفل الشاشة</h3>
-
-<p>
-استعمل PIN قوي أو بصمة لحماية هاتفك.
-</p>
-
+<p>استعمل PIN قوي أو بصمة لحماية هاتفك.</p>
 </div>
 
-
-<!-- =========================
-     TIPS 11-15
-========================= -->
 
 <h2>🌐 ثالثاً: التوعية ضد الاحتيال</h2>
 
 <div class="card tip">
-
 <h3>11. انتبه للتصيد الإلكتروني</h3>
-
-<p>
-تحقق من عنوان الموقع قبل إدخال كلمة المرور
-أو المعلومات الشخصية.
-</p>
-
+<p>تحقق من عنوان الموقع قبل إدخال كلمة المرور أو المعلومات الشخصية.</p>
 </div>
 
 <div class="card tip">
-
 <h3>12. لا تصدق الجوائز الوهمية</h3>
-
-<p>
-لا تضغط على روابط الجوائز والهدايا
-من مصادر مجهولة.
-</p>
-
+<p>لا تضغط على روابط الجوائز والهدايا من مصادر مجهولة.</p>
 </div>
 
 <div class="card tip">
-
 <h3>13. لا تشارك رمز OTP</h3>
-
-<p>
-لا تعطي رمز التفعيل لأي شخص،
-حتى لو ادعى أنه من الدعم الفني.
-</p>
-
+<p>لا تعطي رمز التفعيل لأي شخص.</p>
 </div>
 
 <div class="card tip">
-
 <h3>14. احذر الملفات الغريبة</h3>
-
-<p>
-لا تفتح الملفات غير المتوقعة
-من أشخاص مجهولين.
-</p>
-
+<p>لا تفتح الملفات غير المتوقعة من أشخاص مجهولين.</p>
 </div>
 
 <div class="card tip">
-
 <h3>15. اعمل نسخاً احتياطية</h3>
-
-<p>
-احتفظ بنسخة احتياطية من ملفاتك وصورك المهمة.
-</p>
-
+<p>احتفظ بنسخة احتياطية من ملفاتك وصورك المهمة.</p>
 </div>
 
-
-<!-- =========================
-     ANDROID / IPHONE
-========================= -->
 
 <h2>📱 رابعاً: حماية Android و iPhone</h2>
 
@@ -854,17 +593,13 @@ id="pointsTop">
 </div>
 
 
-<!-- =========================
-     URL CHECKER
-========================= -->
-
-<h2>🔗 تحقق من رابط مشبوه</h2>
+<h2 id="urlCheck">🔗 تحليل الرابط</h2>
 
 <div class="card">
 
 <p>
-هذا الفحص توعوي فقط.
-لا ترسل كلمات مرور أو معلومات شخصية.
+هذا الفحص توعوي فقط. لا يعتبر بديلاً عن خدمات فحص أمنية متخصصة،
+ولا تدخل كلمات مرور أو معلومات شخصية.
 </p>
 
 <input
@@ -884,40 +619,30 @@ onclick="checkURL()">
 
 </button>
 
-<div id="urlResult"></div>
+<div
+id="urlResult"
+class="url-result">
+</div>
 
 </div>
 
 
-<!-- =========================
-     QUIZ
-========================= -->
-
-<h2 id="quiz">
-🧪 خامساً: اختبر مستوى وعيك الأمني
-</h2>
+<h2 id="quiz">🧪 خامساً: اختبر مستوى وعيك الأمني</h2>
 
 <div class="quiz">
 
+
 <div class="question">
 
-<b>
-1. وصلك رمز OTP بدون ما تطلبه؟
-</b>
+<b>1. وصلك رمز OTP بدون ما تطلبه؟</b>
 
 <label>
-<input
-type="radio"
-name="q1"
-value="0">
+<input type="radio" name="q1" value="0">
 نعطيه للشخص الذي طلبه.
 </label>
 
 <label>
-<input
-type="radio"
-name="q1"
-value="1">
+<input type="radio" name="q1" value="1">
 لا أشاركه مع أي شخص.
 </label>
 
@@ -926,24 +651,16 @@ value="1">
 
 <div class="question">
 
-<b>
-2. وصلتك رسالة فيها رابط يطلب كلمة المرور؟
-</b>
+<b>2. لقيت رابط جائزة مجهول؟</b>
 
 <label>
-<input
-type="radio"
-name="q2"
-value="0">
-نضغط على الرابط وندخل كلمة المرور.
+<input type="radio" name="q2" value="0">
+نضغط عليه مباشرة.
 </label>
 
 <label>
-<input
-type="radio"
-name="q2"
-value="1">
-نتحقق من الرابط قبل إدخال أي معلومات.
+<input type="radio" name="q2" value="1">
+نتحقق منه قبل فتحه.
 </label>
 
 </div>
@@ -951,49 +668,16 @@ value="1">
 
 <div class="question">
 
-<b>
-3. تطبيق آلة حاسبة طلب صلاحية الكاميرا؟
-</b>
+<b>3. نفس كلمة المرور لكل الحسابات؟</b>
 
 <label>
-<input
-type="radio"
-name="q3"
-value="0">
-نوافق مباشرة.
-</label>
-
-<label>
-<input
-type="radio"
-name="q3"
-value="1">
-نرفض الصلاحية إذا لم تكن ضرورية.
-</label>
-
-</div>
-
-
-<div class="question">
-
-<b>
-4. هل استعمال كلمة مرور واحدة لكل الحسابات آمن؟
-</b>
-
-<label>
-<input
-type="radio"
-name="q4"
-value="0">
+<input type="radio" name="q3" value="0">
 نعم.
 </label>
 
 <label>
-<input
-type="radio"
-name="q4"
-value="1">
-لا، الأفضل استعمال كلمات مختلفة.
+<input type="radio" name="q3" value="1">
+لا، نستعمل كلمات مختلفة.
 </label>
 
 </div>
@@ -1001,24 +685,33 @@ value="1">
 
 <div class="question">
 
-<b>
-5. ماذا تفعل إذا وجدت جهازاً غريباً داخل حسابك؟
-</b>
+<b>4. تطبيق يطلب صلاحيات لا يحتاجها؟</b>
 
 <label>
-<input
-type="radio"
-name="q5"
-value="0">
-أتجاهله.
+<input type="radio" name="q4" value="0">
+نعطيه الصلاحيات عادي.
 </label>
 
 <label>
-<input
-type="radio"
-name="q5"
-value="1">
-أسجّل خروجه وأغيّر كلمة المرور وأراجع الأمان.
+<input type="radio" name="q4" value="1">
+نراجع الصلاحيات ونرفض غير الضرورية.
+</label>
+
+</div>
+
+
+<div class="question">
+
+<b>5. شخص يطلب كلمة مرور حسابك؟</b>
+
+<label>
+<input type="radio" name="q5" value="0">
+نعطيه كلمة المرور.
+</label>
+
+<label>
+<input type="radio" name="q5" value="1">
+لا نشاركها مع أي شخص.
 </label>
 
 </div>
@@ -1028,327 +721,161 @@ value="1">
 class="btn btn-primary"
 onclick="calculateQuiz()">
 
-✅ احسب النتيجة
+📊 أحسب النتيجة
 
 </button>
+
+<button
+class="btn btn-orange"
+onclick="resetQuiz()">
+
+🔄 إعادة الاختبار
+
+</button>
+
 
 <div id="quizResult"></div>
 
 </div>
 
 
-<!-- =========================
-     POINTS & BADGES
-========================= -->
+<h2 id="faq">❓ سادساً: الأسئلة الشائعة</h2>
 
-<h2>🏆 سادساً: نقاطك وشاراتك</h2>
+
+<div class="faq-item">
+
+<button
+class="faq-question"
+onclick="toggleFAQ(this)">
+
+كيف نحمي حساباتي من الاختراق؟
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+استعمل كلمة مرور قوية وفريدة، فعّل المصادقة الثنائية،
+ولا تشارك رموز التحقق مع أي شخص.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button
+class="faq-question"
+onclick="toggleFAQ(this)">
+
+هل رمز OTP يمكن مشاركته مع شخص آخر؟
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+لا. رمز OTP مخصص لك ولعملية التحقق الخاصة بحسابك،
+ولا يجب مشاركته مع أي شخص.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button
+class="faq-question"
+onclick="toggleFAQ(this)">
+
+هل رقم الهاتف وحده يكفي لاختراق الهاتف؟
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+معرفة رقم الهاتف وحدها لا تعني أن الشخص يستطيع الدخول
+إلى هاتفك مباشرة، لكن قد يحاول استعمال أساليب احتيالية
+لخداعك والحصول على رموز التحقق.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button
+class="faq-question"
+onclick="toggleFAQ(this)">
+
+كيف أعرف أن الرابط مشبوه؟
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+راجع اسم النطاق، وتأكد من استخدام HTTPS، وانتبه للأسماء
+الغريبة أو الأخطاء الإملائية والروابط التي تطلب بيانات حساسة.
+الفحص الموجود في الموقع توعوي فقط ولا يضمن أن الرابط آمن.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button
+class="faq-question"
+onclick="toggleFAQ(this)">
+
+هل تحميل APK من أي موقع آمن؟
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+لا. الأفضل استعمال مصادر موثوقة، ومراجعة اسم التطبيق
+والناشر والصلاحيات قبل التثبيت.
+</p>
+
+</div>
+
+</div>
+
+
+<h2 id="about">👤 عن سند</h2>
 
 <div class="points-box">
 
 <p>
-مجموع نقاطك:
+هذا الموقع مشروع توعوي من SANAD CYBER
+للتعريف بأساسيات الأمن الرقمي.
 </p>
 
-<div
-class="points"
-id="points">
-0
-</div>
+<div class="points">
 
-<div>
+<span id="pointsBottom">0</span>
 
-<span
-class="badge"
-id="badge1">
-🔒 مبتدئ
-</span>
-
-<span
-class="badge"
-id="badge2">
-🛡️ حامي
-</span>
-
-<span
-class="badge"
-id="badge3">
-🏆 خبير
-</span>
+نقطة
 
 </div>
-
-<br>
-
-<button
-class="btn btn-danger"
-onclick="resetPoints()">
-
-إعادة النقاط
-
-</button>
-
-</div>
-
-
-<!-- =========================
-     FAQ
-========================= -->
-
-<h2>❓ سابعاً: الأسئلة الشائعة</h2>
-
-<div class="faq-item">
-
-<button
-class="faq-question"
-onclick="toggleFAQ(this)">
-
-هل يمكن اختراقي بمجرد معرفة رقم هاتفي؟
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-رقم الهاتف وحده لا يعني أن جهازك تم اختراقه،
-لكن يمكن استخدامه في محاولات الاحتيال والهندسة الاجتماعية.
-لا تشارك رموز OTP مع أي شخص.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="faq-item">
-
-<button
-class="faq-question"
-onclick="toggleFAQ(this)">
-
-كيف أحمي حساباتي؟
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-استعمل كلمات مرور قوية ومختلفة،
-فعّل المصادقة الثنائية، وراجع الأجهزة
-والجلسات النشطة بشكل دوري.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="faq-item">
-
-<button
-class="faq-question"
-onclick="toggleFAQ(this)">
-
-هل كل ملفات APK خطيرة؟
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-ليس بالضرورة، لكن تثبيت التطبيقات من مصادر
-غير موثوقة يزيد المخاطر. الأفضل استعمال
-المتاجر والمصادر الرسمية كلما أمكن.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="faq-item">
-
-<button
-class="faq-question"
-onclick="toggleFAQ(this)">
-
-ماذا أفعل إذا ضغطت على رابط مشبوه؟
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-لا تدخل أي معلومات إضافية، أغلق الصفحة،
-وإذا أدخلت كلمة مرور غيّرها من الموقع الرسمي
-وفعّل المصادقة الثنائية.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="faq-item">
-
-<button
-class="faq-question"
-onclick="toggleFAQ(this)">
-
-هل يجب أن أشارك رمز OTP مع الدعم الفني؟
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-لا. رمز OTP رمز سري ولا يجب مشاركته مع أي شخص.
-</p>
-
-</div>
-
-</div>
-
-
-<!-- =========================
-     HELP
-========================= -->
-
-<h2 id="help">
-🚨 ثامناً: المساعدة الأمنية
-</h2>
-
-<div class="help-box">
-
-<h3>إذا شكيت أن حسابك في خطر:</h3>
-
-<ul>
-
-<li>
-غيّر كلمة المرور من الموقع أو التطبيق الرسمي.
-</li>
-
-<li>
-فعّل المصادقة الثنائية.
-</li>
-
-<li>
-راجع الأجهزة والجلسات النشطة.
-</li>
-
-<li>
-لا تشارك رموز OTP.
-</li>
-
-<li>
-لا تضغط على الروابط المشبوهة.
-</li>
-
-<li>
-حدّث نظام الهاتف والتطبيقات.
-</li>
-
-</ul>
-
-</div>
-
-
-<!-- =========================
-     ABOUT
-========================= -->
-
-<h2 id="about">
-👤 تاسعاً: عن سند
-</h2>
-
-<div class="about">
-
-<h2>SANAD CYBER 🔒</h2>
-
-<p>
-أنا سند، وهذا الموقع مشروع توعوي بسيط
-حول الأمن الرقمي والحماية من الاحتيال الإلكتروني.
-</p>
-
-<p>
-الهدف هو نشر نصائح سهلة ومفهومة
-لمساعدة المستخدمين على حماية حساباتهم وأجهزتهم.
-</p>
-
-</div>
-
-
-<!-- =========================
-     LANGUAGE
-========================= -->
-
-<h2>🌍 عاشراً: اللغة</h2>
-
-<div class="language-box">
-
-<select onchange="changeLanguage(this.value)">
-
-<option value="ar">
-🇹🇳 العربية
-</option>
-
-<option value="fr">
-🇫🇷 Français
-</option>
-
-<option value="en">
-🇬🇧 English
-</option>
-
-</select>
-
-<p id="languageMessage">
-اللغة الحالية: العربية 🇹🇳
-</p>
-
-</div>
-
-
-<!-- =========================
-     PRIVACY
-========================= -->
-
-<h2>🔐 الحادي عشر: الخصوصية</h2>
-
-<div class="card">
-
-<p>
-لا تدخل كلمات المرور أو رموز OTP أو البيانات الشخصية
-في أدوات الموقع. الموقع مخصص للتوعية والتعليم الأمني.
-</p>
-
-</div>
-
-
-<!-- =========================
-     WEBSITE COUNTER
-========================= -->
-
-<h2>📊 الثاني عشر: إحصائيات الموقع</h2>
-
-<div class="card">
-
-<p>
-يستعمل الموقع Counter.dev لإحصائيات الزيارات.
-</p>
-
-<p>
-يمكنك مشاهدة الإحصائيات من لوحة Counter.dev الخاصة بك.
-</p>
 
 </div>
 
 
 </main>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
 
 <footer>
 
@@ -1357,158 +884,424 @@ onclick="toggleFAQ(this)">
 </p>
 
 <p>
-موقع توعوي للأمن الرقمي
-</p>
-
-<p>
-© 2026 SANAD CYBER
+موقع توعوي للأمن الرقمي © 2026
 </p>
 
 </footer>
 
 
-<!-- TOP BUTTON -->
-
-<button
-id="topBtn"
-onclick="window.scrollTo({top:0,behavior:'smooth'})">
-
-⬆️
-
-</button>
-
-
 <script>
 
-/* =========================
-   NAVIGATION
-========================= */
+
+let currentPoints = 0;
+
 
 function goTo(id){
 
-    const element=document.getElementById(id);
+const element = document.getElementById(id);
 
-    if(element){
-        element.scrollIntoView({
-            behavior:"smooth"
-        });
-    }
+if(element){
+
+element.scrollIntoView({
+behavior:"smooth"
+});
 
 }
 
+}
 
-/* =========================
-   THEME
-========================= */
 
 function toggleTheme(){
 
-    document.body.classList.toggle("light");
+document.body.classList.toggle("light");
 
-    const isLight=
-        document.body.classList.contains("light");
-
-    localStorage.setItem(
-        "sanadTheme",
-        isLight ? "light" : "dark"
-    );
+localStorage.setItem(
+"sanadTheme",
+document.body.classList.contains("light")
+? "light"
+: "dark"
+);
 
 }
+
 
 if(localStorage.getItem("sanadTheme")==="light"){
 
-    document.body.classList.add("light");
+document.body.classList.add("light");
 
 }
 
-
-/* =========================
-   SEARCH
-========================= */
 
 function searchTips(){
 
-    const text=
-        document.getElementById("searchBox")
-        .value
-        .toLowerCase()
-        .trim();
+const search =
+document.getElementById("searchBox")
+.value
+.toLowerCase()
+.trim();
 
-    const tips=
-        document.querySelectorAll(".tip");
+const tips =
+document.querySelectorAll(".tip");
 
-    let count=0;
+let visible=0;
 
-    tips.forEach(function(tip){
+tips.forEach(tip=>{
 
-        const content=
-            tip.innerText.toLowerCase();
+const text =
+tip.innerText.toLowerCase();
 
-        if(content.includes(text)){
+if(text.includes(search)){
 
-            tip.style.display="block";
+tip.classList.remove("hidden");
 
-            count++;
+visible++;
 
-        }else{
+}else{
 
-            tip.style.display="none";
+tip.classList.add("hidden");
 
-        }
+}
 
-    });
+});
 
-    document.getElementById("tipCount").innerText=count;
+document.getElementById("tipCount").textContent=visible;
 
 }
 
 
-/* =========================
-   URL CHECKER
-========================= */
-
 function checkURL(){
 
-    const input=
-        document.getElementById("urlInput")
-        .value
-        .trim();
+const input =
+document.getElementById("urlInput")
+.value
+.trim();
 
-    const result=
-        document.getElementById("urlResult");
+const result =
+document.getElementById("urlResult");
 
-    if(!input){
 
-        result.innerHTML=
-        "⚠️ اكتب رابطاً أولاً.";
+if(!input){
 
-        result.style.background="#7f1d1d";
+result.style.display="block";
 
-        return;
+result.className="url-result warning";
 
-    }
+result.innerHTML=
+"⚠️ اكتب رابطاً أولاً.";
 
-    let score=0;
+return;
 
-    if(input.startsWith("https://")){
-        score++;
-    }
+}
 
-    if(input.length>20){
-        score++;
-    }
 
-    if(input.includes("@")){
-        score-=2;
-    }
+let url;
 
-    if(input.includes(" ")){
-        score-=2;
-    }
 
-    if(
-        input.includes("free") ||
-        input.includes("gift") ||
-        input.includes("winner") ||
-        input.includes("login-secure")
- 
+try{
+
+url = new URL(
+input.startsWith("http://") ||
+input.startsWith("https://")
+? input
+: "https://" + input
+);
+
+}catch(error){
+
+result.style.display="block";
+
+result.className="url-result danger";
+
+result.innerHTML=
+"❌ الرابط غير صالح. تأكد من كتابته بالشكل الصحيح.";
+
+return;
+
+}
+
+
+let warnings=[];
+
+
+if(url.protocol !== "https:"){
+
+warnings.push(
+"الاتصال ليس HTTPS."
+);
+
+}
+
+
+const hostname =
+url.hostname.toLowerCase();
+
+
+if(
+hostname.includes("@") ||
+hostname.includes(" ")
+){
+
+warnings.push(
+"اسم النطاق يبدو غير طبيعي."
+);
+
+}
+
+
+const suspiciousWords=[
+"login",
+"verify",
+"free",
+"gift",
+"bonus",
+"password",
+"account"
+];
+
+
+let foundWords=[];
+
+suspiciousWords.forEach(word=>{
+
+if(
+url.href.toLowerCase().includes(word)
+){
+
+foundWords.push(word);
+
+}
+
+});
+
+
+if(foundWords.length>0){
+
+warnings.push(
+"الرابط يحتوي على كلمات قد تستعمل في صفحات التصيد: "
++ foundWords.join("، ")
+);
+
+}
+
+
+result.style.display="block";
+
+
+if(warnings.length===0){
+
+result.className="url-result safe";
+
+result.innerHTML=
+"🟢 <b>لا توجد مؤشرات واضحة في الفحص البسيط.</b><br><br>"+
+"النطاق: <b>"+escapeHTML(url.hostname)+"</b><br>"+
+"البروتوكول: <b>"+escapeHTML(url.protocol)+"</b><br><br>"+
+"⚠️ هذا لا يعني أن الموقع آمن 100%.";
+
+}else if(warnings.length===1){
+
+result.className="url-result warning";
+
+result.innerHTML=
+"🟠 <b>انتبه!</b><br><br>"+
+warnings.map(escapeHTML).join("<br>")+"<br><br>"+
+"النطاق: <b>"+escapeHTML(url.hostname)+"</b><br><br>"+
+"لا تدخل معلومات حساسة قبل التأكد من الموقع.";
+
+}else{
+
+result.className="url-result danger";
+
+result.innerHTML=
+"🔴 <b>توجد عدة مؤشرات تستحق الحذر.</b><br><br>"+
+warnings.map(escapeHTML).join("<br>")+"<br><br>"+
+"الأفضل عدم إدخال كلمات مرور أو معلومات شخصية.";
+
+}
+
+}
+
+
+function escapeHTML(text){
+
+return text
+.replace(/&/g,"&amp;")
+.replace(/</g,"&lt;")
+.replace(/>/g,"&gt;")
+.replace(/"/g,"&quot;")
+.replace(/'/g,"&#039;");
+
+}
+
+
+function calculateQuiz(){
+
+const questions=[
+"q1",
+"q2",
+"q3",
+"q4",
+"q5"
+];
+
+let score=0;
+let answered=0;
+
+questions.forEach(name=>{
+
+const selected =
+document.querySelector(
+'input[name="'+name+'"]:checked'
+);
+
+if(selected){
+
+answered++;
+
+score += Number(selected.value);
+
+}
+
+});
+
+
+const result =
+document.getElementById("quizResult");
+
+
+if(answered<questions.length){
+
+result.style.display="block";
+
+result.innerHTML=
+"⚠️ جاوب على الأسئلة الكل قبل حساب النتيجة.";
+
+return;
+
+}
+
+
+currentPoints=score*20;
+
+document.getElementById("pointsTop")
+.textContent=currentPoints;
+
+document.getElementById("pointsBottom")
+.textContent=currentPoints;
+
+
+let message="";
+
+
+if(score===5){
+
+message=
+"🏆 ممتاز! وعيك الأمني ممتاز.";
+
+}else if(score>=3){
+
+message=
+"🛡️ باهي برشا! عندك أساس جيد في الأمن الرقمي.";
+
+}else{
+
+message=
+"📚 يلزمك شوية مراجعة لنصائح الحماية.";
+
+}
+
+
+result.style.display="block";
+
+result.innerHTML=
+message+
+"<br><br>"+
+"نتيجتك: <b>"+score+"/5</b>"+
+"<br>"+
+"النقاط: <b>"+currentPoints+"</b>/100";
+
+localStorage.setItem(
+"sanadPoints",
+currentPoints
+);
+
+}
+
+
+function resetQuiz(){
+
+document
+.querySelectorAll('.question input')
+.forEach(input=>{
+input.checked=false;
+});
+
+
+document.getElementById("quizResult")
+.style.display="none";
+
+}
+
+
+function toggleFAQ(button){
+
+const item =
+button.parentElement;
+
+const answer =
+button.nextElementSibling;
+
+
+document
+.querySelectorAll(".faq-item")
+.forEach(other=>{
+
+if(other!==item){
+
+other.classList.remove("active");
+
+other
+.querySelector(".faq-answer")
+.style.maxHeight=null;
+
+}
+
+});
+
+
+item.classList.toggle("active");
+
+
+if(item.classList.contains("active")){
+
+answer.style.maxHeight=
+answer.scrollHeight+"px";
+
+}else{
+
+answer.style.maxHeight=null;
+
+}
+
+}
+
+
+const savedPoints =
+localStorage.getItem("sanadPoints");
+
+
+if(savedPoints){
+
+currentPoints=Number(savedPoints);
+
+document.getElementById("pointsTop")
+.textContent=currentPoints;
+
+document.getElementById("pointsBottom")
+.textContent=currentPoints;
+
+}
+
+</script>
+
+</body>
+</html>
