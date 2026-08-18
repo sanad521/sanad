@@ -11,7 +11,7 @@
             --bg-color: #0f172a;
             --card-bg: #1e293b;
             --primary-color: #00f2fe;
-            --accent-color: #4facfe;
+            --accent-color: #38bdf8;
             --text-color: #f8fafc;
             --text-muted: #94a3b8;
         }
@@ -23,7 +23,7 @@
         }
 
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             line-height: 1.6;
@@ -31,36 +31,36 @@
         }
 
         .container {
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto;
         }
 
         header {
             text-align: center;
-            padding: 20px 0 30px;
+            padding: 20px 0 25px;
             border-bottom: 2px solid var(--primary-color);
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         h1 {
             color: var(--primary-color);
-            font-size: 1.8rem;
-            margin-bottom: 15px;
+            font-size: 1.7rem;
+            margin-bottom: 12px;
         }
 
-        .highlight {
+        .name-highlight {
             color: #f59e0b;
         }
 
         .intro-text {
             color: #e2e8f0;
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
 
         .section-title {
             color: var(--accent-color);
-            font-size: 1.3rem;
-            margin: 25px 0 15px;
+            font-size: 1.25rem;
+            margin: 30px 0 15px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -79,13 +79,33 @@
 
         .card h3 {
             color: var(--primary-color);
-            font-size: 1.1rem;
-            margin-bottom: 8px;
+            font-size: 1.05rem;
+            margin-bottom: 6px;
         }
 
         .card p {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: 0.92rem;
+        }
+
+        .faq-item {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 12px 15px;
+            font-weight: bold;
+            color: var(--primary-color);
+            border-bottom: 1px solid #334155;
+        }
+
+        .faq-answer {
+            padding: 12px 15px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -93,23 +113,63 @@
 
     <div class="container">
         <header>
-            <h1>🔒 موقع المبرمج <span class="highlight">سند</span> للأمن الرقمي</h1>
+            <h1>🔒 موقع المبرمج <span class="name-highlight">سند</span> للأمن الرقمي</h1>
             <p class="intro-text">
                 مرحباً بكم! أنا سند، أشارككم هنا الموسوعة الشاملة لنصائح الحماية لتأمين حساباتكم وهواتفكم من الاختراق والتجسس.
             </p>
         </header>
 
         <main>
+            <!-- القسم الأول -->
             <h2 class="section-title">🛡️ أولاً: حماية الحسابات الشخصية</h2>
 
             <div class="card">
                 <h3>1. تفعيل المصادقة الثنائية (2FA)</h3>
-                <p>قم بتفعيل ميزة رمز الأمان على فيسبوك وواتساب لربط الدخول بهاتفك دائماً.</p>
+                <p>قم بتفعيل ميزة رمز الأمان على فيسبوك، إنستغرام، وواتساب لربط الدخول بهاتفك دائماً وتمنع أي شخص من فتح حسابك حتى لو عرف كلمة السر.</p>
             </div>
 
             <div class="card">
                 <h3>2. تجنب كلمات المرور الموحدة</h3>
-                <p>لا تستخدم نفس كلمة السر لفيسبوك، وإنستغرام، والإيميل؛ إذا اخترق حساب واحد ستضيع بقية الحسابات.</p>
+                <p>لا تستخدم نفس كلمة السر لجميع حساباتك؛ اختر كلمات سر قوية تحتوي على أرقام ورموز وأحرف كبيرة وصغيرة.</p>
+            </div>
+
+            <!-- القسم الثاني -->
+            <h2 class="section-title">📱 ثانياً: تأمين الهواتف والأجهزة</h2>
+
+            <div class="card">
+                <h3>1. التحديث المستمر للنظام</h3>
+                <p>احرص دائماً على تحديث نظام هاتف (Android/iOS) والتطبيقات لإغلاق الثغرات الأمنية فور اكتشافها.</p>
+            </div>
+
+            <div class="card">
+                <h3>2. الحذر من التطبيقات المجهولة</h3>
+                <p>لا تقم بتحميل تطبيقات من خارج المتجر الرسمي (Google Play / App Store) لتجنب برمجيات التجسس.</p>
+            </div>
+
+            <!-- القسم الثالث -->
+            <h2 class="section-title">⚠️ ثالثاً: كشف محاولات الهندسة الاجتماعية (Phishing)</h2>
+
+            <div class="card">
+                <h3>1. فحص الروابط المشبوهة</h3>
+                <p>لا تنقر على أي رابط يصلك في رسالة تحثك على الدخول السريع أو تدعي أن حسابك سيُغلق، وتأكد دائماً من عنوان الموقع (URL).</p>
+            </div>
+
+            <div class="card">
+                <h3>2. عدم مشاركة رموز التحقق</h3>
+                <p>لا تشارك رمز التفعيل (OTP) الذي يصلك في رسالة SMS مع أي شخص مهما ادعى أنه من خدمة العملاء.</p>
+            </div>
+
+            <!-- قسم الأسئلة الشائعة -->
+            <h2 class="section-title">❓ الأسئلة الشائعة</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">ماذا أفعل إذا تم اختراق حسابي؟</div>
+                <div class="faq-answer">سارع باستعادة الحساب عبر خيار "نسيت كلمة السر"، وقم بتسجيل الخروج من جميع الأجهزة، ثم فعّل المصادقة الثنائية فوراً.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">كيف أعرف أن هاتف يخضع للرقابة؟</div>
+                <div class="faq-answer">لاحظ إذا كانت البطارية تنفد بسرعة غير معتادة، أو ارتفعت حرارة الهاتف بدون استخدام، أو ظهرت تطبيقات غريبة لم تقم بتثبيتها.</div>
             </div>
         </main>
     </div>
