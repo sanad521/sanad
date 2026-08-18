@@ -3,74 +3,357 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع المبرمج سند للأمن الرقمي</title>
-    <!-- كود العداد Counter.dev -->
-    <script src="https://cdn.counter.dev/script.js" data-id="f4579075-e6c3-49ee-affd-2a971af6a6c5" data-utcoffset="1"></script>
+    <title>موقع سند للأمن الرقمي</title>
+
     <style>
-        :root { --bg-color: #0f172a; --card-bg: #1e293b; --primary-color: #00f2fe; --accent-color: #38bdf8; --text-color: #f8fafc; --text-muted: #94a3b8; }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: system-ui, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; padding: 20px 15px; }
-        .container { max-width: 650px; margin: 0 auto; }
-        header { text-align: center; padding: 20px 0 25px; border-bottom: 2px solid var(--primary-color); margin-bottom: 25px; }
-        h1 { color: var(--primary-color); font-size: 1.7rem; margin-bottom: 12px; }
-        .name-highlight { color: #f59e0b; }
-        .intro-text { color: #e2e8f0; font-size: 0.95rem; }
-        .section-title { color: var(--accent-color); font-size: 1.25rem; margin: 30px 0 15px; border-bottom: 1px dashed #334155; padding-bottom: 8px; }
-        .card { background-color: var(--card-bg); border-right: 4px solid var(--primary-color); border-radius: 8px; padding: 15px; margin-bottom: 15px; }
-        .card h3 { color: var(--primary-color); font-size: 1.05rem; margin-bottom: 6px; }
-        .card p { color: var(--text-muted); font-size: 0.92rem; }
-        .faq-card { background-color: var(--card-bg); border-right: 4px solid #f59e0b; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
-        .faq-card h3 { color: #f59e0b; font-size: 1rem; margin-bottom: 6px; }
-        .faq-card p { color: var(--text-color); font-size: 0.9rem; }
+        body {
+            font-family: sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1e293b;
+            padding: 40px 20px;
+            border-bottom: 3px solid #00f2fe;
+        }
+
+        h1 {
+            color: #00f2fe;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-top: 40px;
+            border-bottom: 1px dashed #38bdf8;
+            padding-bottom: 10px;
+        }
+
+        .name-highlight {
+            color: #f59e0b;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 5px solid #00f2fe;
+            text-align: right;
+        }
+
+        .card h3 {
+            color: #00f2fe;
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .card p {
+            margin: 5px 0 0 0;
+            line-height: 1.6;
+            color: #cbd5e1;
+        }
+
+        /* تصميم قسم الأسئلة الشائعة التفاعلي */
+        .faq-accordion {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .faq-item {
+            background-color: #1e293b;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            text-align: right;
+            border-right: 5px solid #f59e0b;
+        }
+
+        .faq-question {
+            background-color: #1e293b;
+            color: #f59e0b;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: right;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            outline: none;
+        }
+
+        .faq-question::after {
+            content: '➕';
+            font-size: 12px;
+            color: #f59e0b;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '➖';
+        }
+
+        .faq-answer {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: #111827;
+        }
+
+        .faq-answer p {
+            padding: 15px 0;
+            margin: 0;
+            line-height: 1.6;
+            color: #e2e8f0;
+        }
+
+        .btn-social {
+            display: inline-block;
+            background: #00f2fe;
+            color: #0f172a;
+            padding: 12px 25px;
+            margin: 20px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .btn-social:hover {
+            background: #38bdf8;
+        }
     </style>
 </head>
+
 <body>
+
+    <!-- الواجهة الرئيسية باسم سند -->
+    <header>
+        <h1>🔒 موقع المبرمج <span class="name-highlight">سند</span> للأمن الرقمي</h1>
+
+        <p>
+            مرحباً بكم! أنا سند، أشارككم هنا الموسوعة الشاملة لنصائح
+            الحماية لتأمين حساباتكم وهواتفكم من الاختراق والتجسس.
+        </p>
+    </header>
+
     <div class="container">
-        <header>
-            <h1>🔒 موقع المبرمج <span class="name-highlight">سند</span> للأمن الرقمي</h1>
-            <p class="intro-text">مرحباً بكم! أنا سند، أشارككم هنا الموسوعة الشاملة لنصائح الحماية لتأمين حساباتكم وهواتفكم من الاختراق والتجسس.</p>
-        </header>
-        <main>
-            <h2 class="section-title">🛡️ أولاً: حماية الحسابات الشخصية</h2>
-            <div class="card">
-                <h3>1. تفعيل المصادقة الثنائية (2FA)</h3>
-                <p>قم بتفعيل ميزة رمز الأمان على فيسبوك، إنستغرام، وواتساب لربط الدخول بهاتفك دائماً وتمنع أي شخص من فتح حسابك حتى لو عرف كلمة السر.</p>
-            </div>
-            <div class="card">
-                <h3>2. تجنب كلمات المرور الموحدة</h3>
-                <p>لا تستخدم نفس كلمة السر لجميع حساباتك؛ اختر كلمات سر قوية تحتوي على أرقام ورموز وأحرف كبيرة وصغيرة.</p>
+
+        <h2>🛡️ أولاً: حماية الحسابات الشخصية</h2>
+
+        <div class="card">
+            <h3>1. تفعيل المصادقة الثنائية (2FA)</h3>
+            <p>
+                قم بتفعيل ميزة رمز الأمان على فيسبوك وواتساب لربط الدخول بهاتفك دائماً.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. تجنب كلمات المرور الموحدة</h3>
+            <p>
+                لا تستخدم نفس كلمة السر لفيسبوك، وإنستغرام، والإيميل؛
+                إذا اخترق حساب واحد ستضيع بقية الحسابات.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. قاعدة كلمات المرور القوية</h3>
+            <p>
+                اجعل كلمتك تحتوي على رموز (#, $, %)، وأرقام، وحروف كبيرة وصغيرة
+                ليصعب تخمينها برمجياً.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>4. البريد الإلكتروني الأساسي</h3>
+            <p>
+                احمِ الإيميل المرتبط بحساباتك؛ لأنه المفتاح الأساسي الذي يستغله
+                الهاكر لاستعادة وتغيير كلمات مرورك.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>5. مراجعة الأجهزة النشطة بانتظام</h3>
+            <p>
+                ادخل إلى إعدادات الأمان في فيسبوك وتأكد من عدم وجود أجهزة غريبة
+                تسجل الدخول إلى حسابك.
+            </p>
+        </div>
+
+
+        <h2>📱 ثانياً: تأمين الهواتف والأجهزة</h2>
+
+        <div class="card">
+            <h3>6. حظر ملفات الـ APK العشوائية</h3>
+            <p>
+                لا تثبت تطبيقات خارج متجر Google Play، فالملفات الخارجية
+                هي الأداة الأسهل لدمج فيروسات التجسس.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>7. مراقبة صلاحيات التطبيقات (Permissions)</h3>
+            <p>
+                تأكد من الصلاحيات؛ لا تسمح لتطبيق ألعاب أو آلة حاسبة
+                بالوصول إلى الكاميرا، الميكروفون، أو الأسماء.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>8. تحديث نظام التشغيل بانتظام</h3>
+            <p>
+                تحديثات الهاتف تغلق الثغرات الأمنية الخطيرة التي يكتشفها
+                الهاكرز في أنظمة الأندرويد.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>9. الحذر من شبكات الـ Wi-Fi العامة</h3>
+            <p>
+                تجنب فتح حساباتك البنكية أو الشخصية عند الاتصال بشبكة
+                واي فاي مجانية في المقاهي بدون تشغيل VPN موثوق.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>10. قفل الشاشة والتشفير</h3>
+            <p>
+                استخدم دائماً رمز PIN أو بصمة الإصبع لمنع أي شخص من العبث
+                بهاتفك يدوياً وتثبيت برامج مراقبة.
+            </p>
+        </div>
+
+
+        <h2>🌐 ثالثاً: التوعية الأمنية ضد الهاكرز</h2>
+
+        <div class="card">
+            <h3>11. كشف صفحات التصيد المزورة (Phishing)</h3>
+            <p>
+                تأكد من رابط الموقع قبل كتابة كلمة مرورك؛ الهاكرز يصنعون
+                صفحات تشبه فيسبوك تماماً لسرقة البيانات.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>12. تجنب روابط الجوائز والإنترنت المجاني</h3>
+            <p>
+                الروابط التي تدعي ربح أموال أو هدايا هي فخ هندسة اجتماعية
+                مصمم لاختراقك أو جمع بياناتك الشخصية.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>13. عدم مشاركة الرموز السرية (OTP)</h3>
+            <p>
+                لا تعطِ رمز التفعيل الذي يصلك في رسالة نصية لأي شخص يدعي
+                أنه من شركة الاتصالات أو الدعم الفني.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>14. الحذر من ملفات المرفقات المشبوهة</h3>
+            <p>
+                لا تفتح ملفات بملحقات غريبة مثل (.exe أو .scr أو .apk)
+                تصلك عبر البريد أو الماسنجر من أشخاص مجهولين.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>15. النسخ الاحتياطي للبيانات بانتظام</h3>
+            <p>
+                احتفظ بنسخة من صورك وملفاتك المهمة على كارت ذاكرة خارجي
+                أو سحابة إلكترونية لحمايتها من فيروسات الفدية.
+            </p>
+        </div>
+
+
+        <!-- قسم الأسئلة الشائعة التفاعلية -->
+        <h2>❓ رابعاً: أسئلة شائعة في الحماية الرقمية</h2>
+
+        <div class="faq-accordion">
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    كيف أعرف أن هاتفي مخترق أو مراقب؟
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        أبرز العلامات هي: نفاد البطارية بشكل سريع جداً وبدون استخدام،
+                        سخونة الهاتف المفاجئة، ظهور تطبيقات لم تقم بتثبيتها بنفسك،
+                        أو استهلاك مفرط لبيانات الإنترنت في الخلفية.
+                    </p>
+                </div>
             </div>
 
-            <h2 class="section-title">📱 ثانياً: تأمين الهواتف والأجهزة</h2>
-            <div class="card">
-                <h3>1. التحديث المستمر للنظام</h3>
-                <p>احرص دائماً على تحديث نظام هاتف (Android/iOS) والتطبيقات لإغلاق الثغرات الأمنية فور اكتشافها.</p>
-            </div>
-            <div class="card">
-                <h3>2. الحذر من التطبيقات المجهولة</h3>
-                <p>لا تقم بتحميل تطبيقات من خارج المتجر الرسمي (Google Play / App Store) لتجنب برمجيات التجسس.</p>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ماذا أفعل إذا تم اختراق حسابي على فيسبوك؟
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        توجه فوراً إلى رابط الدعم الرسمي (https://facebook.com)،
+                        قم بتغيير كلمة المرور، واختر خيار "تسجيل الخروج من جميع
+                        الأجهزة الأخرى"، ثم قم بتفعيل المصادقة الثنائية فوراً
+                        لحمايته مستقبلاً.
+                    </p>
+                </div>
             </div>
 
-            <h2 class="section-title">⚠️ ثالثاً: كشف محاولات الهندسة الاجتماعية</h2>
-            <div class="card">
-                <h3>1. فحص الروابط المشبوهة</h3>
-                <p>لا تنقر على أي رابط يصلك في رسالة تحثك على الدخول السريع أو تدعي أن حسابك سيُغلق، وتأكد دائماً من عنوان الموقع (URL).</p>
-            </div>
-            <div class="card">
-                <h3>2. عدم مشاركة رموز التحقق</h3>
-                <p>لا تشارك رمز التفعيل (OTP) الذي يصلك في رسالة SMS مع أي شخص مهما ادعى أنه من خدمة العملاء.</p>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    هل يمكن للهاكر اختراقي بمجرد معرفة رقم هاتفي؟
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        لا يمكنه اختراق جهازك مباشرة بالرقم فقط، ولكن يمكنه استغلال
+                        الرقم في "الهندسة الاجتماعية"؛ كأن يتصل بك ويدعي أنه من
+                        الدعم الفني ليخدعك وتطيه رمز التفعيل (OTP) الخاص بواتساب
+                        أو حساباتك.
+                    </p>
+                </div>
             </div>
 
-            <h2 class="section-title">❓ الأسئلة الشائعة</h2>
-            <div class="faq-card">
-                <h3>ماذا أفعل إذا تم اختراق حسابي؟</h3>
-                <p>سارع باستعادة الحساب عبر خيار "نسيت كلمة السر"، وقم بتسجيل الخروج من جميع الأجهزة، ثم فعّل المصادقة الثنائية فوراً.</p>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    هل تطبيقات الأنتي فيرس (Antivirus) للهاتف مفيدة فعلاً؟
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        نعم، تطبيقات الحماية الموثوقة (مثل المالويربايتس أو كاسبرسكي)
+                        مفيدة لفحص الهاتف وكشف ملفات التجسس المخفية، ولكن الوعي الشخصي
+                        وعدم تحميل ملفات مشبوهة هو أقوى خط دفاع لحمايتك.
+                    </p>
+                </div>
             </div>
-            <div class="faq-card">
-                <h3>كيف أعرف أن هاتف يخضع للرقابة؟</h3>
-                <p>لاحظ إذا كانت البطارية تنفد بسرعة غير معتادة، أو ارتفعت حرارة الهاتف بدون استخدام، أو ظهرت تطبيقات غريبة لم تقم بتثبيتها.</p>
-            </div>
-        </main>
-    </div>
-</body>
-</html>
+
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    كيف أحمي تطبيق الواتساب الخاص بي من السرقة؟
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        ادخل إلى إعدادات واتساب -> الحساب -> التحقق بخطوتين
