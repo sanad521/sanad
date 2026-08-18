@@ -7,171 +7,70 @@
     <!-- كود العداد Counter.dev -->
     <script src="https://cdn.counter.dev/script.js" data-id="f4579075-e6c3-49ee-affd-2a971af6a6c5" data-utcoffset="1"></script>
     <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --primary-color: #00f2fe;
-            --accent-color: #38bdf8;
-            --text-color: #f8fafc;
-            --text-muted: #94a3b8;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding: 20px 15px;
-        }
-
-        .container {
-            max-width: 650px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px 0 25px;
-            border-bottom: 2px solid var(--primary-color);
-            margin-bottom: 25px;
-        }
-
-        h1 {
-            color: var(--primary-color);
-            font-size: 1.7rem;
-            margin-bottom: 12px;
-        }
-
-        .name-highlight {
-            color: #f59e0b;
-        }
-
-        .intro-text {
-            color: #e2e8f0;
-            font-size: 0.95rem;
-        }
-
-        .section-title {
-            color: var(--accent-color);
-            font-size: 1.25rem;
-            margin: 30px 0 15px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            border-bottom: 1px dashed #334155;
-            padding-bottom: 8px;
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border-right: 4px solid var(--primary-color);
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-        }
-
-        .card h3 {
-            color: var(--primary-color);
-            font-size: 1.05rem;
-            margin-bottom: 6px;
-        }
-
-        .card p {
-            color: var(--text-muted);
-            font-size: 0.92rem;
-        }
-
-        .faq-card {
-            background-color: var(--card-bg);
-            border-right: 4px solid #f59e0b;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-        }
-
-        .faq-card h3 {
-            color: #f59e0b;
-            font-size: 1rem;
-            margin-bottom: 6px;
-        }
-
-        .faq-card p {
-            color: var(--text-color);
-            font-size: 0.9rem;
-        }
+        :root { --bg-color: #0f172a; --card-bg: #1e293b; --primary-color: #00f2fe; --accent-color: #38bdf8; --text-color: #f8fafc; --text-muted: #94a3b8; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: system-ui, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; padding: 20px 15px; }
+        .container { max-width: 650px; margin: 0 auto; }
+        header { text-align: center; padding: 20px 0 25px; border-bottom: 2px solid var(--primary-color); margin-bottom: 25px; }
+        h1 { color: var(--primary-color); font-size: 1.7rem; margin-bottom: 12px; }
+        .name-highlight { color: #f59e0b; }
+        .intro-text { color: #e2e8f0; font-size: 0.95rem; }
+        .section-title { color: var(--accent-color); font-size: 1.25rem; margin: 30px 0 15px; border-bottom: 1px dashed #334155; padding-bottom: 8px; }
+        .card { background-color: var(--card-bg); border-right: 4px solid var(--primary-color); border-radius: 8px; padding: 15px; margin-bottom: 15px; }
+        .card h3 { color: var(--primary-color); font-size: 1.05rem; margin-bottom: 6px; }
+        .card p { color: var(--text-muted); font-size: 0.92rem; }
+        .faq-card { background-color: var(--card-bg); border-right: 4px solid #f59e0b; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
+        .faq-card h3 { color: #f59e0b; font-size: 1rem; margin-bottom: 6px; }
+        .faq-card p { color: var(--text-color); font-size: 0.9rem; }
     </style>
 </head>
 <body>
-
     <div class="container">
         <header>
             <h1>🔒 موقع المبرمج <span class="name-highlight">سند</span> للأمن الرقمي</h1>
-            <p class="intro-text">
-                مرحباً بكم! أنا سند، أشارككم هنا الموسوعة الشاملة لنصائح الحماية لتأمين حساباتكم وهواتفكم من الاختراق والتجسس.
-            </p>
+            <p class="intro-text">مرحباً بكم! أنا سند، أشارككم هنا الموسوعة الشاملة لنصائح الحماية لتأمين حساباتكم وهواتفكم من الاختراق والتجسس.</p>
         </header>
-
         <main>
-            <!-- القسم الأول -->
             <h2 class="section-title">🛡️ أولاً: حماية الحسابات الشخصية</h2>
-
             <div class="card">
                 <h3>1. تفعيل المصادقة الثنائية (2FA)</h3>
                 <p>قم بتفعيل ميزة رمز الأمان على فيسبوك، إنستغرام، وواتساب لربط الدخول بهاتفك دائماً وتمنع أي شخص من فتح حسابك حتى لو عرف كلمة السر.</p>
             </div>
-
             <div class="card">
                 <h3>2. تجنب كلمات المرور الموحدة</h3>
                 <p>لا تستخدم نفس كلمة السر لجميع حساباتك؛ اختر كلمات سر قوية تحتوي على أرقام ورموز وأحرف كبيرة وصغيرة.</p>
             </div>
 
-            <!-- القسم الثاني -->
             <h2 class="section-title">📱 ثانياً: تأمين الهواتف والأجهزة</h2>
-
             <div class="card">
                 <h3>1. التحديث المستمر للنظام</h3>
                 <p>احرص دائماً على تحديث نظام هاتف (Android/iOS) والتطبيقات لإغلاق الثغرات الأمنية فور اكتشافها.</p>
             </div>
-
             <div class="card">
                 <h3>2. الحذر من التطبيقات المجهولة</h3>
                 <p>لا تقم بتحميل تطبيقات من خارج المتجر الرسمي (Google Play / App Store) لتجنب برمجيات التجسس.</p>
             </div>
 
-            <!-- القسم الثالث -->
             <h2 class="section-title">⚠️ ثالثاً: كشف محاولات الهندسة الاجتماعية</h2>
-
             <div class="card">
                 <h3>1. فحص الروابط المشبوهة</h3>
                 <p>لا تنقر على أي رابط يصلك في رسالة تحثك على الدخول السريع أو تدعي أن حسابك سيُغلق، وتأكد دائماً من عنوان الموقع (URL).</p>
             </div>
-
             <div class="card">
                 <h3>2. عدم مشاركة رموز التحقق</h3>
                 <p>لا تشارك رمز التفعيل (OTP) الذي يصلك في رسالة SMS مع أي شخص مهما ادعى أنه من خدمة العملاء.</p>
             </div>
 
-            <!-- قسم الأسئلة الشائعة -->
             <h2 class="section-title">❓ الأسئلة الشائعة</h2>
-
             <div class="faq-card">
                 <h3>ماذا أفعل إذا تم اختراق حسابي؟</h3>
                 <p>سارع باستعادة الحساب عبر خيار "نسيت كلمة السر"، وقم بتسجيل الخروج من جميع الأجهزة، ثم فعّل المصادقة الثنائية فوراً.</p>
             </div>
-
             <div class="faq-card">
                 <h3>كيف أعرف أن هاتف يخضع للرقابة؟</h3>
                 <p>لاحظ إذا كانت البطارية تنفد بسرعة غير معتادة، أو ارتفعت حرارة الهاتف بدون استخدام، أو ظهرت تطبيقات غريبة لم تقم بتثبيتها.</p>
             </div>
         </main>
     </div>
-
 </body>
 </html>
