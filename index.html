@@ -88,23 +88,22 @@
             font-size: 0.92rem;
         }
 
-        .faq-item {
+        .faq-card {
             background-color: var(--card-bg);
+            border-right: 4px solid #f59e0b;
             border-radius: 8px;
-            margin-bottom: 10px;
-            overflow: hidden;
+            padding: 15px;
+            margin-bottom: 15px;
         }
 
-        .faq-question {
-            padding: 12px 15px;
-            font-weight: bold;
-            color: var(--primary-color);
-            border-bottom: 1px solid #334155;
+        .faq-card h3 {
+            color: #f59e0b;
+            font-size: 1rem;
+            margin-bottom: 6px;
         }
 
-        .faq-answer {
-            padding: 12px 15px;
-            color: var(--text-muted);
+        .faq-card p {
+            color: var(--text-color);
             font-size: 0.9rem;
         }
     </style>
@@ -147,7 +146,7 @@
             </div>
 
             <!-- القسم الثالث -->
-            <h2 class="section-title">⚠️ ثالثاً: كشف محاولات الهندسة الاجتماعية (Phishing)</h2>
+            <h2 class="section-title">⚠️ ثالثاً: كشف محاولات الهندسة الاجتماعية</h2>
 
             <div class="card">
                 <h3>1. فحص الروابط المشبوهة</h3>
@@ -162,14 +161,14 @@
             <!-- قسم الأسئلة الشائعة -->
             <h2 class="section-title">❓ الأسئلة الشائعة</h2>
 
-            <div class="faq-item">
-                <div class="faq-question">ماذا أفعل إذا تم اختراق حسابي؟</div>
-                <div class="faq-answer">سارع باستعادة الحساب عبر خيار "نسيت كلمة السر"، وقم بتسجيل الخروج من جميع الأجهزة، ثم فعّل المصادقة الثنائية فوراً.</div>
+            <div class="faq-card">
+                <h3>ماذا أفعل إذا تم اختراق حسابي؟</h3>
+                <p>سارع باستعادة الحساب عبر خيار "نسيت كلمة السر"، وقم بتسجيل الخروج من جميع الأجهزة، ثم فعّل المصادقة الثنائية فوراً.</p>
             </div>
 
-            <div class="faq-item">
-                <div class="faq-question">كيف أعرف أن هاتف يخضع للرقابة؟</div>
-                <div class="faq-answer">لاحظ إذا كانت البطارية تنفد بسرعة غير معتادة، أو ارتفعت حرارة الهاتف بدون استخدام، أو ظهرت تطبيقات غريبة لم تقم بتثبيتها.</div>
+            <div class="faq-card">
+                <h3>كيف أعرف أن هاتف يخضع للرقابة؟</h3>
+                <p>لاحظ إذا كانت البطارية تنفد بسرعة غير معتادة، أو ارتفعت حرارة الهاتف بدون استخدام، أو ظهرت تطبيقات غريبة لم تقم بتثبيتها.</p>
             </div>
         </main>
     </div>
