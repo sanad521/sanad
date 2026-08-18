@@ -9,9 +9,9 @@
 
     <title>SANAD CYBER | موقع سند للأمن الرقمي</title>
 
-    <!-- ==============================
+    <!-- =====================================
          Counter.dev - إحصائيات الزيارات
-         ============================== -->
+         ===================================== -->
 
     <script
         src="https://cdn.counter.dev/script.js"
@@ -82,9 +82,7 @@
 
         header h1 {
             margin: 0;
-
             font-size: 34px;
-
             color: #00f2fe;
         }
 
@@ -94,13 +92,9 @@
 
         header p {
             max-width: 750px;
-
             margin: 20px auto 0;
-
             line-height: 1.9;
-
             color: #cbd5e1;
-
             font-size: 17px;
         }
 
@@ -115,42 +109,29 @@
 
         .navbar {
             position: sticky;
-
             top: 0;
-
             z-index: 1000;
-
             background: rgba(15, 23, 42, 0.95);
-
             backdrop-filter: blur(12px);
-
             padding: 10px;
-
             text-align: center;
-
             border-bottom: 1px solid #334155;
         }
 
         body.light .navbar {
-            background: rgba(255,255,255,0.95);
+            background: rgba(255, 255, 255, 0.95);
         }
 
         .nav-btn {
             border: none;
-
             padding: 10px 14px;
-
             margin: 4px;
-
             border-radius: 8px;
-
             cursor: pointer;
-
             font-weight: bold;
-
             background: #1e293b;
-
             color: #e2e8f0;
+            transition: 0.2s;
         }
 
         body.light .nav-btn {
@@ -160,8 +141,8 @@
 
         .nav-btn:hover {
             background: #00f2fe;
-
             color: #0f172a;
+            transform: translateY(-2px);
         }
 
 
@@ -171,11 +152,8 @@
 
         .container {
             width: 92%;
-
             max-width: 900px;
-
             margin: auto;
-
             padding: 20px 0 50px;
         }
 
@@ -186,11 +164,8 @@
 
         h2 {
             margin-top: 45px;
-
             color: #38bdf8;
-
             border-bottom: 1px dashed #38bdf8;
-
             padding-bottom: 12px;
         }
 
@@ -205,20 +180,12 @@
 
         .card {
             background: #1e293b;
-
             padding: 22px;
-
             margin: 15px 0;
-
             border-radius: 12px;
-
             border-right: 5px solid #00f2fe;
-
             text-align: right;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.15);
-
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
             transition: transform 0.2s;
         }
 
@@ -232,7 +199,6 @@
 
         .card p {
             line-height: 1.8;
-
             color: #cbd5e1;
         }
 
@@ -247,41 +213,32 @@
 
         .btn {
             border: none;
-
             padding: 12px 20px;
-
             margin: 5px;
-
             border-radius: 8px;
-
             cursor: pointer;
-
             font-size: 15px;
-
             font-weight: bold;
-
             transition: 0.2s;
         }
 
         .btn-primary {
             background: #00f2fe;
-
             color: #0f172a;
         }
 
         .btn-primary:hover {
             background: #38bdf8;
+            transform: translateY(-2px);
         }
 
         .btn-orange {
             background: #f59e0b;
-
             color: #111827;
         }
 
         .btn-danger {
             background: #ef4444;
-
             color: white;
         }
 
@@ -292,25 +249,17 @@
 
         .search-box {
             width: 100%;
-
             padding: 16px;
-
             border: 2px solid #38bdf8;
-
             border-radius: 10px;
-
             background: #111827;
-
             color: white;
-
             font-size: 16px;
-
             outline: none;
         }
 
         body.light .search-box {
             background: white;
-
             color: #0f172a;
         }
 
@@ -321,22 +270,15 @@
 
         .stats {
             display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
+            grid-template-columns: repeat(3, 1fr);
             gap: 12px;
-
             margin-top: 20px;
         }
 
         .stat {
             background: #1e293b;
-
             padding: 20px;
-
             border-radius: 12px;
-
             text-align: center;
         }
 
@@ -346,13 +288,9 @@
 
         .stat-number {
             display: block;
-
             font-size: 28px;
-
             color: #00f2fe;
-
             font-weight: bold;
-
             margin-bottom: 5px;
         }
 
@@ -363,13 +301,9 @@
 
         .faq-item {
             background: #1e293b;
-
             margin-bottom: 10px;
-
             border-radius: 10px;
-
             overflow: hidden;
-
             border-right: 5px solid #f59e0b;
         }
 
@@ -379,26 +313,17 @@
 
         .faq-question {
             width: 100%;
-
             border: none;
-
             background: transparent;
-
             color: #f59e0b;
-
             padding: 17px;
-
             font-size: 16px;
-
             font-weight: bold;
-
             cursor: pointer;
-
             text-align: right;
-
             display: flex;
-
             justify-content: space-between;
+            align-items: center;
         }
 
         .faq-question::after {
@@ -411,11 +336,8 @@
 
         .faq-answer {
             max-height: 0;
-
             overflow: hidden;
-
             transition: max-height 0.3s ease;
-
             background: #111827;
         }
 
@@ -425,8 +347,8 @@
 
         .faq-answer p {
             padding: 15px;
-
             line-height: 1.8;
+            margin: 0;
         }
 
 
@@ -436,9 +358,7 @@
 
         .quiz {
             background: #1e293b;
-
             padding: 25px;
-
             border-radius: 15px;
         }
 
@@ -448,13 +368,9 @@
 
         .question {
             background: #111827;
-
             padding: 18px;
-
             border-radius: 10px;
-
             margin-bottom: 15px;
-
             text-align: right;
         }
 
@@ -462,20 +378,29 @@
             background: #e2e8f0;
         }
 
+        .question b {
+            display: block;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
         .question label {
             display: block;
-
             padding: 8px;
-
             cursor: pointer;
+            line-height: 1.6;
+        }
+
+        .question label:hover {
+            background: rgba(56, 189, 248, 0.08);
+            border-radius: 6px;
         }
 
         #quizResult {
             margin-top: 20px;
-
             font-size: 20px;
-
             font-weight: bold;
+            line-height: 1.8;
         }
 
 
@@ -485,33 +410,24 @@
 
         .url-box {
             width: 100%;
-
             padding: 14px;
-
             border-radius: 8px;
-
             border: 1px solid #64748b;
-
             background: #111827;
-
             color: white;
-
             font-size: 15px;
+            outline: none;
         }
 
         body.light .url-box {
             background: white;
-
             color: #0f172a;
         }
 
         #urlResult {
             margin-top: 15px;
-
             padding: 15px;
-
             border-radius: 10px;
-
             line-height: 1.7;
         }
 
@@ -522,11 +438,8 @@
 
         .points-box {
             background: #1e293b;
-
             padding: 25px;
-
             border-radius: 15px;
-
             text-align: center;
         }
 
@@ -536,23 +449,16 @@
 
         .points {
             color: #f59e0b;
-
             font-size: 30px;
-
             font-weight: bold;
         }
 
         .badge {
             display: inline-block;
-
             background: #111827;
-
             padding: 10px 15px;
-
             margin: 5px;
-
             border-radius: 20px;
-
             color: #94a3b8;
         }
 
@@ -562,19 +468,7 @@
 
         .badge.unlocked {
             color: #00f2fe;
-
             border: 1px solid #00f2fe;
-        }
-
-
-        /* =====================================
-           اللغات
-           ===================================== */
-
-        .language-box {
-            text-align: center;
-
-            margin: 20px 0;
         }
 
 
@@ -584,12 +478,13 @@
 
         footer {
             background: #020617;
-
             padding: 35px 20px;
-
             text-align: center;
-
             color: #94a3b8;
+        }
+
+        footer h3 {
+            margin-top: 0;
         }
 
 
@@ -603,12 +498,25 @@
                 font-size: 25px;
             }
 
+            header {
+                padding: 40px 15px;
+            }
+
             .stats {
                 grid-template-columns: 1fr;
             }
 
             .container {
                 width: 94%;
+            }
+
+            .nav-btn {
+                padding: 9px 11px;
+                font-size: 13px;
+            }
+
+            h2 {
+                font-size: 22px;
             }
 
         }
@@ -667,7 +575,6 @@
             للأمن الرقمي
 
         </h1>
-
 
         <p>
 
@@ -1008,7 +915,7 @@
 
 
         <!-- =====================================
-             فحص الرابط من ناحية توعوية
+             فحص الرابط
              ===================================== -->
 
         <h2>🔗 تحقق من رابط مشبوه</h2>
@@ -1017,8 +924,8 @@
         <div class="card">
 
             <p>
-                هذا الفحص توعوي فقط. لا ترسل كلمات مرور
-                أو معلومات شخصية.
+                هذا الفحص توعوي فقط.
+                لا ترسل كلمات مرور أو معلومات شخصية.
             </p>
 
 
@@ -1059,6 +966,8 @@
         <div class="quiz">
 
 
+            <!-- السؤال 1 -->
+
             <div class="question">
 
                 <b>
@@ -1068,29 +977,54 @@
                 <label>
 
                     <input
-                        type="radio"
-                        name="q1"
-                        value="0">
+                        type="radio 
+                        <input
+    type="radio"
+    name="q1"
+    value="0">
 
-                    نعطيه للشخص الذي طلبه.
+نعطيه للشخص الذي طلبه.
 
-                </label>
+</label>
 
-                <label>
+<label>
 
-                    <input
-                        type="radio"
-                        name="q1"
-                        value="1">
+<input
+    type="radio"
+    name="q1"
+    value="1">
 
-                    لا أشاركه مع أي شخص.
+لا أشاركه مع أي شخص.
 
-                </label>
+</label>
 
             </div>
-
-
             <div class="question">
 
-                <b>
-                    2. وصل
+<b>
+2. وصلتك رسالة فيها رابط يطلب منك كلمة المرور؟
+</b>
+
+<label>
+
+<input
+    type="radio"
+    name="q2"
+    value="0">
+
+نضغط على الرابط وندخل كلمة المرور.
+
+</label>
+
+<label>
+
+<input
+    type="radio"
+    name="q2"
+    value="1">
+
+لا أدخل كلمة المرور وأتحقق من الرابط أولاً.
+
+</label>
+
+            </div>
