@@ -2,11 +2,8 @@
 <html lang="ar" dir="rtl">
 
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>SANAD CYBER | موقع سند للأمن الرقمي</title>
 
 <script
@@ -16,7 +13,6 @@ data-utcoffset="1">
 </script>
 
 <style>
-
 *{
 box-sizing:border-box;
 }
@@ -155,6 +151,7 @@ border-radius:8px;
 cursor:pointer;
 font-size:15px;
 font-weight:bold;
+transition:.2s;
 }
 
 .btn-primary{
@@ -338,6 +335,13 @@ margin:0;
 line-height:1.8;
 }
 
+.news-details{
+display:none;
+margin-top:15px;
+border-top:1px dashed #38bdf8;
+padding-top:10px;
+}
+
 .points-box{
 background:#1e293b;
 padding:25px;
@@ -363,7 +367,6 @@ color:#94a3b8;
 }
 
 @media(max-width:650px){
-
 header h1{
 font-size:25px;
 }
@@ -375,933 +378,408 @@ grid-template-columns:1fr;
 .container{
 width:94%;
 }
-
 }
-
 </style>
-
 </head>
 
 <body>
 
 <nav class="navbar">
-
-<button class="nav-btn" onclick="goTo('home')">
-🏠 الرئيسية
-</button>
-
-<button class="nav-btn" onclick="goTo('quiz')">
-🧪 اختبار
-</button>
-
-<button class="nav-btn" onclick="goTo('faq')">
-❓ الأسئلة
-</button>
-
-<button class="nav-btn" onclick="goTo('urlCheck')">
-🔗 فحص رابط
-</button>
-
-<button class="nav-btn" onclick="goTo('about')">
-👤 عن سند
-</button>
-
-<button class="nav-btn" onclick="toggleTheme()">
-🌙 / ☀️
-</button>
-
+<button class="nav-btn" onclick="goTo('home')">🏠 الرئيسية</button>
+<button class="nav-btn" onclick="goTo('news')">📰 الأخبار</button>
+<button class="nav-btn" onclick="goTo('quiz')">🧪 اختبار</button>
+<button class="nav-btn" onclick="goTo('faq')">❓ الأسئلة</button>
+<button class="nav-btn" onclick="goTo('urlCheck')">🔗 فحص رابط</button>
+<button class="nav-btn" onclick="goTo('about')">👤 عن سند</button>
+<button class="nav-btn" onclick="toggleTheme()">🌙 / ☀️</button>
 </nav>
 
-
 <header id="home">
-
-<h1>
-🔒 موقع المبرمج
-<span class="name-highlight">سند</span>
-للأمن الرقمي
-</h1>
-
+<h1>🔒 موقع المبرمج <span class="name-highlight">سند</span> للأمن الرقمي</h1>
 <p>
-مرحباً بكم في SANAD CYBER 👋
-<br>
-موقع توعوي يساعدك على فهم أساسيات الأمن الرقمي
-وحماية حساباتك وهاتفك.
+مرحباً بكم في SANAD CYBER 👋<br>
+موقع توعوي يساعدك على فهم أساسيات الأمن الرقمي وحماية حساباتك وهاتفك.
 </p>
-
 </header>
-
 
 <main class="container">
 
+<h2 id="news">📰 آخر الأخبار والتنبيهات الأمنية</h2>
+
+<div class="card">
+<h3>🚨 تنبيه: حملة تصيد جديدة تستهدف مستخدمي الواتساب</h3>
+<p style="font-size:13px; color:#f59e0b;">🗓️ تحديث: أوت 2026</p>
+<p>انتشار رسائل ملغومة تتضمن روابط وهمية تعد بفرص عمل أو جوائز مالية مع معالجة سريعة.</p>
+<button class="btn btn-primary" onclick="toggleNews(this)">📖 اقرأ الخبر كامل</button>
+<div class="news-details">
+<p><b>التفاصيل كاملة:</b></p>
+<p>تعتمد هذه الحملة على إرسال رسائل تحتوي على رابط مزيف يطلب منك إدخال رقم هاتفك ورمز التحقق (OTP). بمجرد إدخال الرمز، يتم اختراق حسابك واستخدامه لإرسال نفس الرسالة لأصدقائك.</p>
+<p><b>💡 كيف تحمي نفسك؟</b> لا تضغط على الروابط المجهولة، ولا تشارك رمز OTP مع أي شخص مهما كانت الصفة التي يدعيها.</p>
+</div>
+</div>
+
+<div class="card">
+<h3>🔒 تحديث أمني هام لنظام أندرويد و iOS</h3>
+<p style="font-size:13px; color:#f59e0b;">🗓️ تحديث: أوت 2026</p>
+<p>شركات التكنولوجيا تطلق تحديثات جديدة لسد ثغرات أمنية حرجَة يجب معالجتها فوراً.</p>
+<button class="btn btn-primary" onclick="toggleNews(this)">📖 اقرأ الخبر كامل</button>
+<div class="news-details">
+<p><b>التفاصيل كاملة:</b></p>
+<p>تم اكتشاف ثغرة تسمح للمخترقين بالوصول للصور والملفات في حالة عدم تحديث النظام. أطلقت الشركات التحديثات الواقية لسد هذه الثغرة بشكل نهائي.</p>
+<p><b>💡 ماذا تفعل؟</b> ادخل لإعدادات الهاتف ⬅️ تحديث النظام (Software Update) وقُم بالتحديث فوراً.</p>
+</div>
+</div>
 
 <h2>🔍 ابحث في نصائح الموقع</h2>
-
-<input
-id="searchBox"
-class="search-box"
-type="text"
-placeholder="ابحث عن واتساب، كلمات المرور، Wi-Fi..."
-oninput="searchTips()"
->
-
+<input id="searchBox" class="search-box" type="text" placeholder="ابحث عن واتساب، كلمات المرور، Wi-Fi..." oninput="searchTips()">
 
 <div class="stats">
-
-<div class="stat">
-
-<span
-class="stat-number"
-id="tipCount">
-15
-</span>
-
-نصيحة أمنية
-
+<div class="stat"><span class="stat-number" id="tipCount">15</span> نصيحة أمنية</div>
+<div class="stat"><span class="stat-number" id="pointsTop">0</span> نقاطك</div>
+<div class="stat"><span class="stat-number">🔐</span> حماية رقمية</div>
 </div>
-
-<div class="stat">
-
-<span
-class="stat-number"
-id="pointsTop">
-0
-</span>
-
-نقاطك
-
-</div>
-
-<div class="stat">
-
-<span class="stat-number">
-🔐
-</span>
-
-حماية رقمية
-
-</div>
-
-</div>
-
 
 <h2>🛡️ أولاً: حماية الحسابات الشخصية</h2>
-
 <div class="card tip">
 <h3>1. تفعيل المصادقة الثنائية 2FA</h3>
 <p>فعّل المصادقة الثنائية في الحسابات المهمة لإضافة طبقة حماية إضافية.</p>
 </div>
-
 <div class="card tip">
 <h3>2. لا تستعمل نفس كلمة المرور</h3>
 <p>استعمل كلمات مرور مختلفة للحسابات المهمة.</p>
 </div>
-
 <div class="card tip">
 <h3>3. استعمل كلمات مرور قوية</h3>
 <p>اجعل كلمات المرور طويلة وفريدة ولا تستعمل معلومات سهلة التخمين.</p>
 </div>
-
 <div class="card tip">
 <h3>4. احمِ البريد الإلكتروني</h3>
 <p>البريد الإلكتروني مهم لاستعادة حساباتك، لذلك يجب حمايته جيداً.</p>
 </div>
-
 <div class="card tip">
 <h3>5. راجع الأجهزة النشطة</h3>
 <p>راجع الأجهزة التي سجلت الدخول إلى حساباتك وسجّل الخروج من الأجهزة غير المعروفة.</p>
 </div>
 
-
 <h2>📱 ثانياً: تأمين الهواتف والأجهزة</h2>
-
 <div class="card tip">
 <h3>6. الحذر من ملفات APK</h3>
 <p>تجنب التطبيقات من المصادر المجهولة وتأكد من موثوقية المصدر.</p>
 </div>
-
 <div class="card tip">
 <h3>7. راقب صلاحيات التطبيقات</h3>
 <p>لا تمنح التطبيق صلاحيات لا يحتاج إليها.</p>
 </div>
-
 <div class="card tip">
 <h3>8. حدّث الهاتف</h3>
 <p>حافظ على تحديث نظام التشغيل والتطبيقات للحصول على الإصلاحات الأمنية.</p>
 </div>
-
 <div class="card tip">
 <h3>9. احذر شبكات Wi-Fi العامة</h3>
 <p>تجنب إدخال معلومات حساسة عبر شبكات عامة وغير موثوقة.</p>
 </div>
-
 <div class="card tip">
 <h3>10. قفل الشاشة</h3>
 <p>استعمل PIN قوي أو بصمة لحماية هاتفك.</p>
 </div>
 
-
 <h2>🌐 ثالثاً: التوعية ضد الاحتيال</h2>
-
 <div class="card tip">
 <h3>11. انتبه للتصيد الإلكتروني</h3>
 <p>تحقق من عنوان الموقع قبل إدخال كلمة المرور أو المعلومات الشخصية.</p>
 </div>
-
 <div class="card tip">
 <h3>12. لا تصدق الجوائز الوهمية</h3>
 <p>لا تضغط على روابط الجوائز والهدايا من مصادر مجهولة.</p>
 </div>
-
 <div class="card tip">
 <h3>13. لا تشارك رمز OTP</h3>
 <p>لا تعطي رمز التفعيل لأي شخص.</p>
 </div>
-
 <div class="card tip">
 <h3>14. احذر الملفات الغريبة</h3>
 <p>لا تفتح الملفات غير المتوقعة من أشخاص مجهولين.</p>
 </div>
-
 <div class="card tip">
 <h3>15. اعمل نسخاً احتياطية</h3>
 <p>احتفظ بنسخة احتياطية من ملفاتك وصورك المهمة.</p>
 </div>
 
-
 <h2>📱 رابعاً: حماية Android و iPhone</h2>
-
 <div class="card">
-
 <h3>🤖 Android</h3>
-
-<p>
-حافظ على تحديث النظام، راجع صلاحيات التطبيقات،
-واستعمل مصادر موثوقة لتحميل التطبيقات.
-</p>
-
+<p>حافظ على تحديث النظام، راجع صلاحيات التطبيقات، واستعمل مصادر موثوقة لتحميل التطبيقات.</p>
 </div>
-
 <div class="card">
-
 <h3>🍎 iPhone</h3>
-
-<p>
-حافظ على تحديث iOS، فعّل رمز القفل والمصادقة
-الثنائية لحساب Apple، وراجع صلاحيات التطبيقات.
-</p>
-
+<p>حافظ على تحديث iOS، فعّل رمز القفل والمصادقة الثنائية لحساب Apple، وراجع صلاحيات التطبيقات.</p>
 </div>
-
 
 <h2 id="urlCheck">🔗 تحليل الرابط</h2>
-
 <div class="card">
-
-<p>
-هذا الفحص توعوي فقط. لا يعتبر بديلاً عن خدمات فحص أمنية متخصصة،
-ولا تدخل كلمات مرور أو معلومات شخصية.
-</p>
-
-<input
-id="urlInput"
-class="url-box"
-type="text"
-placeholder="مثال: https://example.com"
->
-
-<br>
-
-<button
-class="btn btn-primary"
-onclick="checkURL()">
-
-🔎 تحليل الرابط
-
-</button>
-
-<div
-id="urlResult"
-class="url-result">
+<p>هذا الفحص توعوي فقط. لا يعتبر بديلاً عن خدمات فحص أمنية متخصصة، ولا تدخل كلمات مرور أو معلومات شخصية.</p>
+<input id="urlInput" class="url-box" type="text" placeholder="مثال: https://example.com"><br>
+<button class="btn btn-primary" onclick="checkURL()">🔎 تحليل الرابط</button>
+<div id="urlResult" class="url-result"></div>
 </div>
-
-</div>
-
 
 <h2 id="quiz">🧪 خامساً: اختبر مستوى وعيك الأمني</h2>
-
 <div class="quiz">
-
-
 <div class="question">
-
 <b>1. وصلك رمز OTP بدون ما تطلبه؟</b>
-
-<label>
-<input type="radio" name="q1" value="0">
-نعطيه للشخص الذي طلبه.
-</label>
-
-<label>
-<input type="radio" name="q1" value="1">
-لا أشاركه مع أي شخص.
-</label>
-
+<label><input type="radio" name="q1" value="0"> نعطيه للشخص الذي طلبه.</label>
+<label><input type="radio" name="q1" value="1"> لا أشاركه مع أي شخص.</label>
 </div>
 
-
 <div class="question">
-
 <b>2. لقيت رابط جائزة مجهول؟</b>
-
-<label>
-<input type="radio" name="q2" value="0">
-نضغط عليه مباشرة.
-</label>
-
-<label>
-<input type="radio" name="q2" value="1">
-نتحقق منه قبل فتحه.
-</label>
-
+<label><input type="radio" name="q2" value="0"> نضغط عليه مباشرة.</label>
+<label><input type="radio" name="q2" value="1"> نتحقق منه قبل فتحه.</label>
 </div>
 
-
 <div class="question">
-
 <b>3. نفس كلمة المرور لكل الحسابات؟</b>
-
-<label>
-<input type="radio" name="q3" value="0">
-نعم.
-</label>
-
-<label>
-<input type="radio" name="q3" value="1">
-لا، نستعمل كلمات مختلفة.
-</label>
-
+<label><input type="radio" name="q3" value="0"> نعم.</label>
+<label><input type="radio" name="q3" value="1"> لا، نستعمل كلمات مختلفة.</label>
 </div>
 
-
 <div class="question">
-
 <b>4. تطبيق يطلب صلاحيات لا يحتاجها؟</b>
-
-<label>
-<input type="radio" name="q4" value="0">
-نعطيه الصلاحيات عادي.
-</label>
-
-<label>
-<input type="radio" name="q4" value="1">
-نراجع الصلاحيات ونرفض غير الضرورية.
-</label>
-
+<label><input type="radio" name="q4" value="0"> نعطيه الصلاحيات عادي.</label>
+<label><input type="radio" name="q4" value="1"> نراجع الصلاحيات ونرفض غير الضرورية.</label>
 </div>
-
 
 <div class="question">
-
 <b>5. شخص يطلب كلمة مرور حسابك؟</b>
-
-<label>
-<input type="radio" name="q5" value="0">
-نعطيه كلمة المرور.
-</label>
-
-<label>
-<input type="radio" name="q5" value="1">
-لا نشاركها مع أي شخص.
-</label>
-
+<label><input type="radio" name="q5" value="0"> نعطيه كلمة المرور.</label>
+<label><input type="radio" name="q5" value="1"> لا نشاركها مع أي شخص.</label>
 </div>
 
-
-<button
-class="btn btn-primary"
-onclick="calculateQuiz()">
-
-📊 أحسب النتيجة
-
-</button>
-
-<button
-class="btn btn-orange"
-onclick="resetQuiz()">
-
-🔄 إعادة الاختبار
-
-</button>
-
-
+<button class="btn btn-primary" onclick="calculateQuiz()">📊 أحسب النتيجة</button>
+<button class="btn btn-orange" onclick="resetQuiz()">🔄 إعادة الاختبار</button>
 <div id="quizResult"></div>
-
 </div>
-
 
 <h2 id="faq">❓ سادساً: الأسئلة الشائعة</h2>
-
+<div class="faq-item">
+<button class="faq-question" onclick="toggleFAQ(this)">كيف نحمي حساباتي من الاختراق؟</button>
+<div class="faq-answer"><p>استعمل كلمة مرور قوية وفريدة، فعّل المصادقة الثنائية، ولا تشارك رموز التحقق مع أي شخص.</p></div>
+</div>
 
 <div class="faq-item">
-
-<button
-class="faq-question"
-onclick="toggleFAQ(this)">
-
-كيف نحمي حساباتي من الاختراق؟
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-استعمل كلمة مرور قوية وفريدة، فعّل المصادقة الثنائية،
-ولا تشارك رموز التحقق مع أي شخص.
-</p>
-
+<button class="faq-question" onclick="toggleFAQ(this)">هل رمز OTP يمكن مشاركته مع شخص آخر؟</button>
+<div class="faq-answer"><p>لا. رمز OTP مخصص لك ولعملية التحقق الخاصة بحسابك، ولا يجب مشاركته مع أي شخص.</p></div>
 </div>
-
-</div>
-
 
 <div class="faq-item">
-
-<button
-class="faq-question"
-onclick="toggleFAQ(this)">
-
-هل رمز OTP يمكن مشاركته مع شخص آخر؟
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-لا. رمز OTP مخصص لك ولعملية التحقق الخاصة بحسابك،
-ولا يجب مشاركته مع أي شخص.
-</p>
-
+<button class="faq-question" onclick="toggleFAQ(this)">هل رقم الهاتف وحده يكفي لاختراق الهاتف؟</button>
+<div class="faq-answer"><p>معرفة رقم الهاتف وحدها لا تعني أن الشخص يستطيع الدخول إلى هاتفك مباشرة، لكن قد يحاول استعمال أساليب احتيالية لخداعك والحصول على رموز التحقق.</p></div>
 </div>
-
-</div>
-
 
 <div class="faq-item">
-
-<button
-class="faq-question"
-onclick="toggleFAQ(this)">
-
-هل رقم الهاتف وحده يكفي لاختراق الهاتف؟
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-معرفة رقم الهاتف وحدها لا تعني أن الشخص يستطيع الدخول
-إلى هاتفك مباشرة، لكن قد يحاول استعمال أساليب احتيالية
-لخداعك والحصول على رموز التحقق.
-</p>
-
+<button class="faq-question" onclick="toggleFAQ(this)">كيف أعرف أن الرابط مشبوه؟</button>
+<div class="faq-answer"><p>راجع اسم النطاق، وتأكد من استخدام HTTPS، وانتبه للأسماء الغريبة أو الأخطاء الإملائية والروابط التي تطلب بيانات حساسة. الفحص الموجود في الموقع توعوي فقط ولا يضمن أن الرابط آمن.</p></div>
 </div>
-
-</div>
-
 
 <div class="faq-item">
-
-<button
-class="faq-question"
-onclick="toggleFAQ(this)">
-
-كيف أعرف أن الرابط مشبوه؟
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-راجع اسم النطاق، وتأكد من استخدام HTTPS، وانتبه للأسماء
-الغريبة أو الأخطاء الإملائية والروابط التي تطلب بيانات حساسة.
-الفحص الموجود في الموقع توعوي فقط ولا يضمن أن الرابط آمن.
-</p>
-
+<button class="faq-question" onclick="toggleFAQ(this)">هل تحميل APK من أي موقع آمن؟</button>
+<div class="faq-answer"><p>لا. الأفضل استعمال مصادر موثوقة، ومراجعة اسم التطبيق والناشر والصلاحيات قبل التثبيت.</p></div>
 </div>
-
-</div>
-
-
-<div class="faq-item">
-
-<button
-class="faq-question"
-onclick="toggleFAQ(this)">
-
-هل تحميل APK من أي موقع آمن؟
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-لا. الأفضل استعمال مصادر موثوقة، ومراجعة اسم التطبيق
-والناشر والصلاحيات قبل التثبيت.
-</p>
-
-</div>
-
-</div>
-
 
 <h2 id="about">👤 عن سند</h2>
-
 <div class="points-box">
-
-<p>
-هذا الموقع مشروع توعوي من SANAD CYBER
-للتعريف بأساسيات الأمن الرقمي.
-</p>
-
-<div class="points">
-
-<span id="pointsBottom">0</span>
-
-نقطة
-
+<p>هذا الموقع مشروع توعوي من SANAD CYBER للتعريف بأساسيات الأمن الرقمي.</p>
+<div class="points"><span id="pointsBottom">0</span> نقطة</div>
 </div>
-
-</div>
-
 
 </main>
 
-
 <footer>
-
-<p>
-🔒 SANAD CYBER
-</p>
-
-<p>
-موقع توعوي للأمن الرقمي © 2026
-</p>
-
+<p>🔒 SANAD CYBER</p>
+<p>موقع توعوي للأمن الرقمي © 2026</p>
 </footer>
 
-
 <script>
-
-
 let currentPoints = 0;
 
-
 function goTo(id){
-
-const element = document.getElementById(id);
-
-if(element){
-
-element.scrollIntoView({
-behavior:"smooth"
-});
-
+  const element = document.getElementById(id);
+  if(element){
+    element.scrollIntoView({ behavior:"smooth" });
+  }
 }
-
-}
-
 
 function toggleTheme(){
-
-document.body.classList.toggle("light");
-
-localStorage.setItem(
-"sanadTheme",
-document.body.classList.contains("light")
-? "light"
-: "dark"
-);
-
+  document.body.classList.toggle("light");
+  localStorage.setItem("sanadTheme", document.body.classList.contains("light") ? "light" : "dark");
 }
-
 
 if(localStorage.getItem("sanadTheme")==="light"){
-
-document.body.classList.add("light");
-
+  document.body.classList.add("light");
 }
 
+function toggleNews(button) {
+  const details = button.nextElementSibling;
+  if (details.style.display === "block") {
+    details.style.display = "none";
+    button.textContent = "📖 اقرأ الخبر كامل";
+    button.classList.remove("btn-orange");
+    button.classList.add("btn-primary");
+  } else {
+    details.style.display = "block";
+    button.textContent = "إخفاء التفاصيل ✖️";
+    button.classList.remove("btn-primary");
+    button.classList.add("btn-orange");
+  }
+}
 
 function searchTips(){
+  const search = document.getElementById("searchBox").value.toLowerCase().trim();
+  const tips = document.querySelectorAll(".tip");
+  let visible=0;
 
-const search =
-document.getElementById("searchBox")
-.value
-.toLowerCase()
-.trim();
-
-const tips =
-document.querySelectorAll(".tip");
-
-let visible=0;
-
-tips.forEach(tip=>{
-
-const text =
-tip.innerText.toLowerCase();
-
-if(text.includes(search)){
-
-tip.classList.remove("hidden");
-
-visible++;
-
-}else{
-
-tip.classList.add("hidden");
-
+  tips.forEach(tip=>{
+    const text = tip.innerText.toLowerCase();
+    if(text.includes(search)){
+      tip.classList.remove("hidden");
+      visible++;
+    }else{
+      tip.classList.add("hidden");
+    }
+  });
+  document.getElementById("tipCount").textContent=visible;
 }
-
-});
-
-document.getElementById("tipCount").textContent=visible;
-
-}
-
 
 function checkURL(){
+  const input = document.getElementById("urlInput").value.trim();
+  const result = document.getElementById("urlResult");
 
-const input =
-document.getElementById("urlInput")
-.value
-.trim();
+  if(!input){
+    result.style.display="block";
+    result.className="url-result warning";
+    result.innerHTML="⚠️ اكتب رابطاً أولاً.";
+    return;
+  }
 
-const result =
-document.getElementById("urlResult");
+  let url;
+  try{
+    url = new URL(input.startsWith("http://") || input.startsWith("https://") ? input : "https://" + input);
+  }catch(error){
+    result.style.display="block";
+    result.className="url-result danger";
+    result.innerHTML="❌ الرابط غير صالح. تأكد من كتابته بالشكل الصحيح.";
+    return;
+  }
 
+  let warnings=[];
+  if(url.protocol !== "https:"){
+    warnings.push("الاتصال ليس HTTPS.");
+  }
 
-if(!input){
+  const hostname = url.hostname.toLowerCase();
+  if(hostname.includes("@") || hostname.includes(" ")){
+    warnings.push("اسم النطاق يبدو غير طبيعي.");
+  }
 
-result.style.display="block";
+  const suspiciousWords=["login","verify","free","gift","bonus","password","account"];
+  let foundWords=[];
+  suspiciousWords.forEach(word=>{
+    if(url.href.toLowerCase().includes(word)){
+      foundWords.push(word);
+    }
+  });
 
-result.className="url-result warning";
+  if(foundWords.length>0){
+    warnings.push("الرابط يحتوي على كلمات قد تستعمل في صفحات التصيد: " + foundWords.join("، "));
+  }
 
-result.innerHTML=
-"⚠️ اكتب رابطاً أولاً.";
-
-return;
-
+  result.style.display="block";
+  if(warnings.length===0){
+    result.className="url-result safe";
+    result.innerHTML="🟢 <b>لا توجد مؤشرات واضحة في الفحص البسيط.</b><br><br>النطاق: <b>"+escapeHTML(url.hostname)+"</b><br>البروتوكول: <b>"+escapeHTML(url.protocol)+"</b><br><br>⚠️ هذا لا يعني أن الموقع آمن 100%.";
+  }else if(warnings.length===1){
+    result.className="url-result warning";
+    result.innerHTML="🟠 <b>انتبه!</b><br><br>"+warnings.map(escapeHTML).join("<br>")+"<br><br>النطاق: <b>"+escapeHTML(url.hostname)+"</b><br><br>لا تدخل معلومات حساسة قبل التأكد من الموقع.";
+  }else{
+    result.className="url-result danger";
+    result.innerHTML="🔴 <b>توجد عدة مؤشرات تستحق الحذر.</b><br><br>"+warnings.map(escapeHTML).join("<br>")+"<br><br>الأفضل عدم إدخال كلمات مرور أو معلومات شخصية.";
+  }
 }
-
-
-let url;
-
-
-try{
-
-url = new URL(
-input.startsWith("http://") ||
-input.startsWith("https://")
-? input
-: "https://" + input
-);
-
-}catch(error){
-
-result.style.display="block";
-
-result.className="url-result danger";
-
-result.innerHTML=
-"❌ الرابط غير صالح. تأكد من كتابته بالشكل الصحيح.";
-
-return;
-
-}
-
-
-let warnings=[];
-
-
-if(url.protocol !== "https:"){
-
-warnings.push(
-"الاتصال ليس HTTPS."
-);
-
-}
-
-
-const hostname =
-url.hostname.toLowerCase();
-
-
-if(
-hostname.includes("@") ||
-hostname.includes(" ")
-){
-
-warnings.push(
-"اسم النطاق يبدو غير طبيعي."
-);
-
-}
-
-
-const suspiciousWords=[
-"login",
-"verify",
-"free",
-"gift",
-"bonus",
-"password",
-"account"
-];
-
-
-let foundWords=[];
-
-suspiciousWords.forEach(word=>{
-
-if(
-url.href.toLowerCase().includes(word)
-){
-
-foundWords.push(word);
-
-}
-
-});
-
-
-if(foundWords.length>0){
-
-warnings.push(
-"الرابط يحتوي على كلمات قد تستعمل في صفحات التصيد: "
-+ foundWords.join("، ")
-);
-
-}
-
-
-result.style.display="block";
-
-
-if(warnings.length===0){
-
-result.className="url-result safe";
-
-result.innerHTML=
-"🟢 <b>لا توجد مؤشرات واضحة في الفحص البسيط.</b><br><br>"+
-"النطاق: <b>"+escapeHTML(url.hostname)+"</b><br>"+
-"البروتوكول: <b>"+escapeHTML(url.protocol)+"</b><br><br>"+
-"⚠️ هذا لا يعني أن الموقع آمن 100%.";
-
-}else if(warnings.length===1){
-
-result.className="url-result warning";
-
-result.innerHTML=
-"🟠 <b>انتبه!</b><br><br>"+
-warnings.map(escapeHTML).join("<br>")+"<br><br>"+
-"النطاق: <b>"+escapeHTML(url.hostname)+"</b><br><br>"+
-"لا تدخل معلومات حساسة قبل التأكد من الموقع.";
-
-}else{
-
-result.className="url-result danger";
-
-result.innerHTML=
-"🔴 <b>توجد عدة مؤشرات تستحق الحذر.</b><br><br>"+
-warnings.map(escapeHTML).join("<br>")+"<br><br>"+
-"الأفضل عدم إدخال كلمات مرور أو معلومات شخصية.";
-
-}
-
-}
-
 
 function escapeHTML(text){
-
-return text
-.replace(/&/g,"&amp;")
-.replace(/</g,"&lt;")
-.replace(/>/g,"&gt;")
-.replace(/"/g,"&quot;")
-.replace(/'/g,"&#039;");
-
+  return text.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;");
 }
-
 
 function calculateQuiz(){
+  const questions=["q1","q2","q3","q4","q5"];
+  let score=0;
+  let answered=0;
 
-const questions=[
-"q1",
-"q2",
-"q3",
-"q4",
-"q5"
-];
+  questions.forEach(name=>{
+    const selected = document.querySelector('input[name="'+name+'"]:checked');
+    if(selected){
+      answered++;
+      score += Number(selected.value);
+    }
+  });
 
-let score=0;
-let answered=0;
+  const result = document.getElementById("quizResult");
+  if(answered<questions.length){
+    result.style.display="block";
+    result.innerHTML="⚠️ جاوب على الأسئلة الكل قبل حساب النتيجة.";
+    return;
+  }
 
-questions.forEach(name=>{
+  currentPoints=score*20;
+  document.getElementById("pointsTop").textContent=currentPoints;
+  document.getElementById("pointsBottom").textContent=currentPoints;
 
-const selected =
-document.querySelector(
-'input[name="'+name+'"]:checked'
-);
+  let message="";
+  if(score===5){
+    message="🏆 ممتاز! وعيك الأمني ممتاز.";
+  }else if(score>=3){
+    message="🛡️ باهي برشا! عندك أساس جيد في الأمن الرقمي.";
+  }else{
+    message="📚 يلزمك شوية مراجعة لنصائح الحماية.";
+  }
 
-if(selected){
-
-answered++;
-
-score += Number(selected.value);
-
+  result.style.display="block";
+  result.innerHTML=message+"<br><br>نتيجتك: <b>"+score+"/5</b><br>النقاط: <b>"+currentPoints+"</b>/100";
+  localStorage.setItem("sanadPoints", currentPoints);
 }
-
-});
-
-
-const result =
-document.getElementById("quizResult");
-
-
-if(answered<questions.length){
-
-result.style.display="block";
-
-result.innerHTML=
-"⚠️ جاوب على الأسئلة الكل قبل حساب النتيجة.";
-
-return;
-
-}
-
-
-currentPoints=score*20;
-
-document.getElementById("pointsTop")
-.textContent=currentPoints;
-
-document.getElementById("pointsBottom")
-.textContent=currentPoints;
-
-
-let message="";
-
-
-if(score===5){
-
-message=
-"🏆 ممتاز! وعيك الأمني ممتاز.";
-
-}else if(score>=3){
-
-message=
-"🛡️ باهي برشا! عندك أساس جيد في الأمن الرقمي.";
-
-}else{
-
-message=
-"📚 يلزمك شوية مراجعة لنصائح الحماية.";
-
-}
-
-
-result.style.display="block";
-
-result.innerHTML=
-message+
-"<br><br>"+
-"نتيجتك: <b>"+score+"/5</b>"+
-"<br>"+
-"النقاط: <b>"+currentPoints+"</b>/100";
-
-localStorage.setItem(
-"sanadPoints",
-currentPoints
-);
-
-}
-
 
 function resetQuiz(){
-
-document
-.querySelectorAll('.question input')
-.forEach(input=>{
-input.checked=false;
-});
-
-
-document.getElementById("quizResult")
-.style.display="none";
-
+  document.querySelectorAll('.question input').forEach(input=>{ input.checked=false; });
+  document.getElementById("quizResult").style.display="none";
 }
-
 
 function toggleFAQ(button){
+  const item = button.parentElement;
+  const answer = button.nextElementSibling;
 
-const item =
-button.parentElement;
+  document.querySelectorAll(".faq-item").forEach(other=>{
+    if(other!==item){
+      other.classList.remove("active");
+      other.querySelector(".faq-answer").style.maxHeight=null;
+    }
+  });
 
-const answer =
-button.nextElementSibling;
-
-
-document
-.querySelectorAll(".faq-item")
-.forEach(other=>{
-
-if(other!==item){
-
-other.classList.remove("active");
-
-other
-.querySelector(".faq-answer")
-.style.maxHeight=null;
-
+  item.classList.toggle("active");
+  if(item.classList.contains("active")){
+    answer.style.maxHeight=answer.scrollHeight+"px";
+  }else{
+    answer.style.maxHeight=null;
+  }
 }
 
-});
-
-
-item.classList.toggle("active");
-
-
-if(item.classList.contains("active")){
-
-answer.style.maxHeight=
-answer.scrollHeight+"px";
-
-}else{
-
-answer.style.maxHeight=null;
-
-}
-
-}
-
-
-const savedPoints =
-localStorage.getItem("sanadPoints");
-
-
+const savedPoints = localStorage.getItem("sanadPoints");
 if(savedPoints){
-
-currentPoints=Number(savedPoints);
-
-document.getElementById("pointsTop")
-.textContent=currentPoints;
-
-document.getElementById("pointsBottom")
-.textContent=currentPoints;
-
+  currentPoints=Number(savedPoints);
+  document.getElementById("pointsTop").textContent=currentPoints;
+  document.getElementById("pointsBottom").textContent=currentPoints;
 }
-
 </script>
 
 </body>
-</html>
+  </html>
+  
