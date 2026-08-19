@@ -2,117 +2,1172 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SANAD CYBER | موسوعة الأمن الرقمي</title>
-<script src="https://cdn.counter.dev/script.js" data-id="f4579075-e6c3-49ee-affd-2a971af6a6c5" data-utcoffset="1"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>SANAD CYBER | الأمن الرقمي</title>
+
+<script
+src="https://cdn.counter.dev/script.js"
+data-id="f4579075-e6c3-49ee-affd-2a971af6a6c5"
+data-utcoffset="1">
+</script>
+
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Tahoma,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.9}
-body.light{background:#f1f5f9;color:#0f172a}
-header{padding:55px 20px;text-align:center;background:linear-gradient(135deg,#0f172a,#1e293b);border-bottom:3px solid #00f2fe}
-body.light header{background:linear-gradient(135deg,#fff,#e2e8f0)}
-h1{margin:0;color:#00f2fe;font-size:35px}.name{color:#f59e0b}
-header p{max-width:800px;margin:15px auto;color:#cbd5e1;font-size:17px}
-body.light header p{color:#475569}
-.navbar{position:sticky;top:0;z-index:20;padding:10px;text-align:center;background:rgba(15,23,42,.96);backdrop-filter:blur(10px);border-bottom:1px solid #334155}
-body.light .navbar{background:rgba(255,255,255,.96)}
-.nav-btn,.btn{border:0;border-radius:9px;padding:11px 15px;margin:4px;cursor:pointer;font-weight:bold}
-.nav-btn{background:#1e293b;color:#e2e8f0}.light .nav-btn{background:#e2e8f0;color:#0f172a}
-.nav-btn:hover,.btn-primary:hover{background:#38bdf8;color:#0f172a}
-.btn-primary{background:#00f2fe;color:#0f172a}.btn-orange{background:#f59e0b;color:#111827}
-.container{width:94%;max-width:1000px;margin:auto;padding:20px 0 60px}
-h2{color:#38bdf8;border-bottom:1px dashed #38bdf8;padding-bottom:10px;margin-top:40px}
-.search{width:100%;padding:16px;border:2px solid #38bdf8;border-radius:10px;background:#111827;color:#fff;font-size:16px;outline:none}
-body.light .search{background:#fff;color:#0f172a}
-.filters{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.card{background:#1e293b;border-radius:14px;overflow:hidden;border-right:5px solid #00f2fe;cursor:pointer;transition:.2s}
-body.light .card{background:#fff}.card:hover{transform:translateY(-4px)}
-.card img{width:100%;height:175px;object-fit:cover;display:block}
-.card-content{padding:17px}.card h3{color:#00f2fe;margin:0 0 5px;font-size:18px}.card p{color:#cbd5e1;margin:0}
-body.light .card p{color:#475569}
-.tag{display:inline-block;padding:3px 9px;border-radius:15px;background:#0e7490;color:#cffafe;font-size:12px;margin-bottom:8px}
-.page{display:none}.page.active{display:block}
-.reader{background:#1e293b;border-radius:16px;padding:22px}
-body.light .reader{background:#fff}
-.reader .hero{width:100%;border-radius:14px;display:block;margin-bottom:20px}
-.reader h1{font-size:31px;margin:10px 0 4px}
-.reader h2{margin-top:28px}.reader p{font-size:17px;color:#cbd5e1}
-body.light .reader p{color:#334155}
-.reader ul{padding-right:25px}.reader li{margin:8px 0}
-.back{background:#f59e0b;color:#111827;margin-bottom:15px}
-.info-box{background:#111827;border-right:4px solid #f59e0b;padding:15px;border-radius:10px;margin:18px 0}
-body.light .info-box{background:#e2e8f0}
-.faq{background:#1e293b;border-radius:10px;margin:10px 0;overflow:hidden;border-right:5px solid #f59e0b}
-body.light .faq{background:#fff}.faq button{width:100%;background:transparent;color:#f59e0b;text-align:right;display:flex;justify-content:space-between;font-size:16px}
-.answer{display:none;padding:0 17px 15px}.faq.open .answer{display:block}
-.tool,.quiz{background:#1e293b;padding:22px;border-radius:14px;margin-top:15px}
-body.light .tool,body.light .quiz{background:#fff}
-.question{background:#111827;padding:15px;border-radius:10px;margin:12px 0}
-body.light .question{background:#e2e8f0}.question label{display:block;padding:6px;cursor:pointer}
-#quizResult,#urlResult{margin-top:15px;padding:15px;border-radius:10px;display:none}
-.safe{background:#064e3b;color:#a7f3d0}.warn{background:#78350f;color:#fde68a}.danger{background:#7f1d1d;color:#fecaca}
-footer{background:#020617;text-align:center;padding:35px;color:#94a3b8}
-@media(max-width:700px){.grid{grid-template-columns:1fr}h1{font-size:27px}.reader h1{font-size:26px}.reader p{font-size:16px}}
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+margin:0;
+font-family:Arial,Tahoma,sans-serif;
+background:#07111f;
+color:#e5eef8;
+transition:.3s;
+}
+
+body.light{
+background:#eef4f8;
+color:#102030;
+}
+
+header{
+padding:55px 20px;
+text-align:center;
+background:linear-gradient(135deg,#07111f,#13263d);
+border-bottom:3px solid #00e5ff;
+}
+
+body.light header{
+background:linear-gradient(135deg,#fff,#dce8f0);
+}
+
+.logo{
+font-size:38px;
+font-weight:bold;
+color:#00e5ff;
+}
+
+.logo span{color:#f59e0b}
+
+header p{
+max-width:800px;
+margin:18px auto;
+line-height:1.9;
+color:#b9c9d8;
+}
+
+body.light header p{color:#405466}
+
+.nav{
+position:sticky;
+top:0;
+z-index:99;
+padding:10px;
+text-align:center;
+background:rgba(7,17,31,.95);
+backdrop-filter:blur(12px);
+border-bottom:1px solid #29405a;
+}
+
+body.light .nav{
+background:rgba(255,255,255,.95);
+}
+
+.nav button{
+border:0;
+border-radius:9px;
+padding:11px 15px;
+margin:4px;
+background:#172b40;
+color:#e5eef8;
+font-weight:bold;
+cursor:pointer;
+}
+
+body.light .nav button{
+background:#dce8f0;
+color:#102030;
+}
+
+.nav button:hover{
+background:#00e5ff;
+color:#07111f;
+}
+
+.container{
+width:92%;
+max-width:1050px;
+margin:auto;
+padding:25px 0 60px;
+}
+
+.search{
+width:100%;
+padding:17px;
+border:2px solid #00cfee;
+border-radius:12px;
+background:#0d1b2c;
+color:white;
+font-size:17px;
+outline:none;
+margin:15px 0 25px;
+}
+
+body.light .search{
+background:white;
+color:#102030;
+}
+
+.categories{
+display:flex;
+gap:8px;
+overflow-x:auto;
+padding-bottom:10px;
+}
+
+.categories button{
+white-space:nowrap;
+border:0;
+padding:10px 15px;
+border-radius:20px;
+background:#173047;
+color:white;
+cursor:pointer;
+}
+
+.categories button:hover{
+background:#00e5ff;
+color:#07111f;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+}
+
+.card{
+background:#102238;
+border-radius:15px;
+overflow:hidden;
+border:1px solid #203b56;
+box-shadow:0 8px 25px rgba(0,0,0,.2);
+transition:.25s;
+}
+
+body.light .card{
+background:white;
+border-color:#d0dce5;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card-img{
+width:100%;
+height:150px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:60px;
+background:linear-gradient(135deg,#102d46,#071522);
+}
+
+body.light .card-img{
+background:linear-gradient(135deg,#e4f5fa,#d7e7ef);
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+margin-top:0;
+color:#00e5ff;
+}
+
+body.light .card h3{color:#008aa0}
+
+.card p{
+line-height:1.8;
+color:#b9c9d8;
+}
+
+body.light .card p{color:#4b6070}
+
+.read{
+width:100%;
+border:0;
+border-radius:9px;
+padding:12px;
+background:#00e5ff;
+color:#07111f;
+font-weight:bold;
+cursor:pointer;
+}
+
+.read:hover{background:#38bdf8}
+
+.article{
+display:none;
+}
+
+.article.active{
+display:block;
+animation:appear .3s ease;
+}
+
+@keyframes appear{
+from{opacity:0;transform:translateY(15px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.back{
+border:0;
+padding:12px 18px;
+border-radius:9px;
+background:#f59e0b;
+font-weight:bold;
+cursor:pointer;
+margin-bottom:20px;
+}
+
+.article-box{
+background:#102238;
+border-radius:15px;
+padding:25px;
+border:1px solid #29445e;
+}
+
+body.light .article-box{
+background:white;
+border-color:#d0dce5;
+}
+
+.article-image{
+height:190px;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:80px;
+background:linear-gradient(135deg,#102d46,#071522);
+margin-bottom:25px;
+}
+
+.article h1{
+color:#00e5ff;
+}
+
+.article h2{
+color:#f59e0b;
+border-bottom:1px dashed #f59e0b;
+padding-bottom:8px;
+}
+
+.article p,.article li{
+line-height:2;
+font-size:17px;
+}
+
+.tip{
+padding:15px;
+margin:15px 0;
+border-right:5px solid #00e5ff;
+background:#0b1b2c;
+border-radius:8px;
+}
+
+body.light .tip{
+background:#edf5f8;
+}
+
+footer{
+text-align:center;
+padding:40px 20px;
+background:#030b14;
+color:#8fa3b7;
+}
+
+body.light footer{
+background:#dce8f0;
+}
+
+.hidden{display:none}
+
+@media(max-width:700px){
+.grid{grid-template-columns:1fr}
+.logo{font-size:29px}
+header{padding:40px 15px}
+.card-img{height:130px}
+}
 </style>
 </head>
+
 <body>
-<nav class="navbar">
-<button class="nav-btn" onclick="home()">🏠 الرئيسية</button>
-<button class="nav-btn" onclick="scrollToId('articles')">📰 المقالات</button>
-<button class="nav-btn" onclick="scrollToId('quiz')">🧪 الاختبار</button>
-<button class="nav-btn" onclick="scrollToId('faq')">❓ الأسئلة</button>
-<button class="nav-btn" onclick="scrollToId('tools')">🔗 فحص رابط</button>
-<button class="nav-btn" onclick="theme()">🌙 / ☀️</button>
-</nav>
+
 <header id="home">
-<h1>🔒 SANAD <span class="name">CYBER</span></h1>
-<p>موسوعة توعوية للأمن الرقمي: أكثر من 50 موضوعاً بشرح طويل، صور مختلفة، ونصائح عملية وآمنة.</p>
+<div class="logo">🔒 SANAD <span>CYBER</span></div>
+<p>
+موسوعة سند للأمن الرقمي 🛡️
+<br>
+50 معلومة تساعدك على فهم المخاطر الرقمية وحماية حساباتك وهاتفك وبياناتك.
+</p>
 </header>
+
+<nav class="nav">
+<button onclick="home()">🏠 الرئيسية</button>
+<button onclick="showArticles()">📚 الموسوعة</button>
+<button onclick="toggleTheme()">🌙 / ☀️</button>
+</nav>
+
 <main class="container">
-<section id="mainContent">
-<h2 id="articles">📰 موسوعة SANAD CYBER</h2>
-<input id="search" class="search" oninput="filter()" placeholder="🔍 ابحث عن موضوع...">
-<div class="filters" id="filters"></div>
+
+<section id="homePage">
+
+<h2>🔍 ابحث في الموسوعة</h2>
+
+<input
+id="search"
+class="search"
+placeholder="اكتب مثلاً: واتساب، تصيد، كلمة مرور..."
+oninput="searchArticles()">
+
+<div class="categories">
+<button onclick="filterArticles('all')">الكل</button>
+<button onclick="filterArticles('accounts')">الحسابات</button>
+<button onclick="filterArticles('phone')">الهاتف</button>
+<button onclick="filterArticles('internet')">الإنترنت</button>
+<button onclick="filterArticles('privacy')">الخصوصية</button>
+</div>
+
+<br>
+
 <div id="grid" class="grid"></div>
+
 </section>
 
-<section id="reader" class="page">
-<button class="btn back" onclick="home()">← رجوع للمقالات</button>
-<div id="article" class="reader"></div>
+<section id="articlePage">
+
+<button class="back" onclick="home()">⬅️ رجوع للموسوعة</button>
+
+<div id="articleContent" class="article-box"></div>
+
 </section>
 
-<section id="tools">
-<h2>🔗 تحليل رابط توعوي</h2>
-<div class="tool">
-<p>الفحص محلي وبسيط للتوعية، ولا يستطيع ضمان سلامة الموقع 100%. لا تضع كلمات مرور أو بيانات شخصية هنا.</p>
-<input id="urlInput" class="search" placeholder="https://example.com">
-<button class="btn btn-primary" onclick="checkURL()">🔎 تحليل الرابط</button>
-<div id="urlResult"></div>
-</div>
-</section>
-
-<section id="quiz">
-<h2>🧪 اختبار الوعي الأمني</h2>
-<div class="quiz">
-<div class="question"><b>1. وصلك OTP لم تطلبه؟</b><label><input type="radio" name="q1" value="0"> أعطيه لمن يطلبه</label><label><input type="radio" name="q1" value="1"> لا أشاركه</label></div>
-<div class="question"><b>2. رابط جائزة من مصدر مجهول؟</b><label><input type="radio" name="q2" value="0"> أفتحه مباشرة</label><label><input type="radio" name="q2" value="1"> أتحقق من المصدر</label></div>
-<div class="question"><b>3. نفس كلمة السر لكل الحسابات؟</b><label><input type="radio" name="q3" value="0"> نعم</label><label><input type="radio" name="q3" value="1"> لا</label></div>
-<div class="question"><b>4. تطبيق يطلب صلاحية لا يحتاجها؟</b><label><input type="radio" name="q4" value="0"> أوافق</label><label><input type="radio" name="q4" value="1"> أراجعها وأرفض غير الضرورية</label></div>
-<div class="question"><b>5. شخص يطلب كلمة مرورك؟</b><label><input type="radio" name="q5" value="0"> أعطيه</label><label><input type="radio" name="q5" value="1"> لا أشاركها</label></div>
-<button class="btn btn-primary" onclick="quiz()">📊 أحسب النتيجة</button><div id="quizResult"></div>
-</div>
-</section>
-
-<section id="faq">
-<h2>❓ الأسئلة الشائعة</h2>
-<div class="faq"><button onclick="faq(this)">كيف نحمي حساباتنا؟ <span>➕</span></button><div class="answer">استعمل كلمات مرور قوية وفريدة، فعّل المصادقة الثنائية، وراجع الأجهزة والجلسات بانتظام.</div></div>
-<div class="faq"><button onclick="faq(this)">هل OTP سري؟ <span>➕</span></button><div class="answer">نعم. لا تشاركه مع أي شخص، حتى لو ادعى أنه من الدعم.</div></div>
-<div class="faq"><button onclick="faq(this)">هل HTTPS يعني أن الموقع موثوق؟ <span>➕</span></button><div class="answer">لا. HTTPS يحمي الاتصال، لكنه لا يثبت أن صاحب الموقع موثوق.</div></div>
-<div class="faq"><button onclick="faq(this)">هل كل APK خطير؟ <span>➕</span></button><div class="answer">ليس بالضرورة، لكن المصدر مهم جداً. تجنب الملفات المعدلة والمجهولة.</div></div>
-</section>
 </main>
-<footer><b>🔒 SANAD CYBER</b><br>موسوعة توعوية للأمن الرقمي © 2026</footer>
+
+<footer>
+<h3>🔐 SANAD CYBER</h3>
+<p>موقع توعوي للأمن الرقمي — صنع بواسطة سند ❤️</p>
+<p>تعلم • احمِ نفسك • لا تثق في الروابط المشبوهة</p>
+</footer>
 
 <script>
-const data = [{"title": "كلمة مرور قوية", "icon": "🔐", "cat": "الحسابات وكلمات المرور", "short": "كلمة المرور القوية تكون طويلة وفريدة ولا تعتمد على معلومات شخصية سهلة التخمين.", "body": "استعمل عبارة طويلة لا تستعملها في أي حساب آخر، وابتعد عن الاسم وتاريخ الميلاد وأرقام الهاتف. مدير كلمات المرور يمكن أن يساعدك على إنشاء كلمات مختلفة وحفظها بطريقة منظمة.", "tip": "القوة لا تعني كثرة الرموز فقط؛ الطول والفرادة وعدم إعادة الاستخدام عوامل مهمة جداً.", "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221200%22%20height%3D%22500%22%20viewBox%3D%220%200%201200%20500%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g1%22%20x1%3D%220%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%230f172a%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23164e63%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%221200%22%20height%3D%22500%22%20rx%3D%2228%22%20fill%3D%22url%28%23g1%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%221030%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%2300f2fe%22%20opacity%3D%22.10%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22180%22%20cy%3D%22420%22%20r%3D%22190%22%20fill%3D%22%23f59e0b%22%20opacity%3D%22.08%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22190%22%20text-anchor%3D%22middle%22%20font-size%3D%22105%22%3E%F0%9F%94%90%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22300%22%20text-anchor%3D%22middle%22%20fill%3D%22%2300f2fe%22%20font-family%3D%22Arial%22%20font-size%3D%2240%22%20font-weight%3D%22700%22%3ESANAD%20CYBER%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22365%22%20text-anchor%3D%22middle%22%20fill%3D%22%23e2e8f0%22%20font-family%3D%22Arial%22%20font-size%3D%2230%22%3E%D9%83%D9%84%D9%85%D8%A9%20%D9%85%D8%B1%D9%88%D8%B1%20%D9%82%D9%88%D9%8A%D8%A9%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22425%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f59e0b%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%3E%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D8%B1%D9%82%D9%85%201%3C/text%3E%0A%20%20%20%20%3C/svg%3E"}, {"title": "لماذا لا نستعمل نفس كلمة السر؟", "icon": "🔑", "cat": "الحسابات وكلمات المرور", "short": "إعادة استعمال كلمة المرور تجعل تسرب حساب واحد مشكلة قد تمتد إلى حسابات أخرى.", "body": "إذا استُخدمت نفس الكلمة في البريد ومواقع التواصل، يمكن للمهاجم تجربة البيانات المسربة في خدمات أخرى. لذلك اجعل لكل حساب مهم كلمة مختلفة.", "tip": "ابدأ بالبريد الإلكتروني والحسابات التي تحتوي على معلومات شخصية مهمة.", "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221200%22%20height%3D%22500%22%20viewBox%3D%220%200%201200%20500%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g2%22%20x1%3D%220%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%230f172a%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23164e63%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%221200%22%20height%3D%22500%22%20rx%3D%2228%22%20fill%3D%22url%28%23g2%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%221030%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%2300f2fe%22%20opacity%3D%22.10%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22180%22%20cy%3D%22420%22%20r%3D%22190%22%20fill%3D%22%23f59e0b%22%20opacity%3D%22.08%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22190%22%20text-anchor%3D%22middle%22%20font-size%3D%22105%22%3E%F0%9F%94%91%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22300%22%20text-anchor%3D%22middle%22%20fill%3D%22%2300f2fe%22%20font-family%3D%22Arial%22%20font-size%3D%2240%22%20font-weight%3D%22700%22%3ESANAD%20CYBER%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22365%22%20text-anchor%3D%22middle%22%20fill%3D%22%23e2e8f0%22%20font-family%3D%22Arial%22%20font-size%3D%2230%22%3E%D9%84%D9%85%D8%A7%D8%B0%D8%A7%20%D9%84%D8%A7%20%D9%86%D8%B3%D8%AA%D8%B9%D9%85%D9%84%20%D9%86%D9%81%D8%B3%20%D9%83%D9%84%D9%85%D8%A9%20%D8%A7%D9%84%D8%B3%D8%B1%D8%9F%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22425%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f59e0b%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%3E%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D8%B1%D9%82%D9%85%202%3C/text%3E%0A%20%20%20%20%3C/svg%3E"}, {"title": "المصادقة الثنائية 2FA", "icon": "🛡️", "cat": "الحسابات وكلمات المرور", "short": "المصادقة الثنائية تضيف خطوة تحقق ثانية بعد كلمة المرور.", "body": "حتى إذا عرف شخص كلمة المرور، يحتاج إلى وسيلة التحقق الثانية. يمكن أن تكون تطبيق مصادقة أو وسيلة أخرى تدعمها الخدمة.", "tip": "فعّل 2FA خصوصاً للبريد الإلكتروني وحسابات التواصل والحسابات المهمة.", "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221200%22%20height%3D%22500%22%20viewBox%3D%220%200%201200%20500%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g3%22%20x1%3D%220%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%230f172a%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23164e63%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%221200%22%20height%3D%22500%22%20rx%3D%2228%22%20fill%3D%22url%28%23g3%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%221030%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%2300f2fe%22%20opacity%3D%22.10%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22180%22%20cy%3D%22420%22%20r%3D%22190%22%20fill%3D%22%23f59e0b%22%20opacity%3D%22.08%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22190%22%20text-anchor%3D%22middle%22%20font-size%3D%22105%22%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22300%22%20text-anchor%3D%22middle%22%20fill%3D%22%2300f2fe%22%20font-family%3D%22Arial%22%20font-size%3D%2240%22%20font-weight%3D%22700%22%3ESANAD%20CYBER%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22365%22%20text-anchor%3D%22middle%22%20fill%3D%22%23e2e8f0%22%20font-family%3D%22Arial%22%20font-size%3D%2230%22%3E%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%AF%D9%82%D8%A9%20%D8%A7%D9%84%D8%AB%D9%86%D8%A7%D8%A6%D9%8A%D8%A9%202FA%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22425%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f59e0b%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%3E%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D8%B1%D9%82%D9%85%203%3C/text%3E%0A%20%20%20%20%3C/svg%3E"}, {"title": "رمز OTP", "icon": "🔢", "cat": "الحسابات وكلمات المرور", "short": "رمز OTP رمز مؤقت يستخدم للتحقق من محاولة تسجيل دخول أو تغيير إعدادات الحساب.", "body": "أي شخص يطلب منك رمزاً وصلك للتو قد يحاول إكمال عملية بدأها على حسابك. شركات الدعم الحقيقية لا تحتاج عادة إلى معرفة رمزك السري.", "tip": "لا تشارك OTP مع أي شخص، وتعامل مع وصول رمز غير متوقع كإشارة تستحق التحقق.", "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221200%22%20height%3D%22500%22%20viewBox%3D%220%200%201200%20500%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g4%22%20x1%3D%220%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%230f172a%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23164e63%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%221200%22%20height%3D%22500%22%20rx%3D%2228%22%20fill%3D%22url%28%23g4%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%221030%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%2300f2fe%22%20opacity%3D%22.10%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22180%22%20cy%3D%22420%22%20r%3D%22190%22%20fill%3D%22%23f59e0b%22%20opacity%3D%22.08%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22190%22%20text-anchor%3D%22middle%22%20font-size%3D%22105%22%3E%F0%9F%94%A2%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22300%22%20text-anchor%3D%22middle%22%20fill%3D%22%2300f2fe%22%20font-family%3D%22Arial%22%20font-size%3D%2240%22%20font-weight%3D%22700%22%3ESANAD%20CYBER%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22365%22%20text-anchor%3D%22middle%22%20fill%3D%22%23e2e8f0%22%20font-family%3D%22Arial%22%20font-size%3D%2230%22%3E%D8%B1%D9%85%D8%B2%20OTP%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22425%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f59e0b%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%3E%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D8%B1%D9%82%D9%85%204%3C/text%3E%0A%20%20%20%20%3C/svg%3E"}, {"title": "حماية البريد الإلكتروني", "icon": "📧", "cat": "الحسابات وكلمات المرور", "short": "البريد الإلكتروني غالباً هو مفتاح استعادة الكثير من الحسابات.", "body": "إذا تمكن شخص من الوصول إلى بريدك فقد يحاول إعادة تعيين كلمات مرور خدمات أخرى. لذلك يجب أن يكون البريد محمياً جيداً بكلمة مرور فريدة و2FA.", "tip": "راجع وسائل الاسترداد والأجهزة والجلسات النشطة من إعدادات الخدمة.", "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221200%22%20height%3D%22500%22%20viewBox%3D%220%200%201200%20500%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g5%22%20x1%3D%220%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%230f172a%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23164e63%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%221200%22%20height%3D%22500%22%20rx%3D%2228%22%20fill%3D%22url%28%23g5%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%221030%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%2300f2fe%22%20opacity%3D%22.10%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22180%22%20cy%3D%22420%22%20r%3D%22190%22%20fill%3D%22%23f59e0b%22%20opacity%3D%22.08%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22190%22%20text-anchor%3D%22middle%22%20font-size%3D%22105%22%3E%F0%9F%93%A7%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22300%22%20text-anchor%3D%22middle%22%20fill%3D%22%2300f2fe%22%20font-family%3D%22Arial%22%20font-size%3D%2240%22%20font-weight%3D%22700%22%3ESANAD%20CYBER%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22365%22%20text-anchor%3D%22middle%22%20fill%3D%22%23e2e8f0%22%20font-family%3D%22Arial%22%20font-size%3D%2230%22%3E%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22425%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f59e0b%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%3E%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D8%B1%D9%82%D9%85%205%3C/text%3E%0A%20%20%20%20%3C/svg%3E"}, {"title": "الأجهزة المسجل منها الدخول", "icon": "💻", "cat": "الحسابات وكلمات المرور", "short": "معظم الخدمات تعرض الأجهزة أو الجلسات التي استعملت حسابك.", "body": "مراجعة هذه القائمة تساعدك على ملاحظة جهاز لا تعرفه أو جلسة قديمة نسيتها. لا تعتمد على الإشعارات وحدها.", "tip": "إذا وجدت نشاطاً غير معروف، استخدم أدوات الأمان الرسمية وغيّر كلمة المرور من جهاز موثوق.", "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221200%22%20height%3D%22500%22%20viewBox%3D%220%200%201200%20500%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g6%22%20x1%3D%220%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%230f172a%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23164e63%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%221200%22%20height%3D%22500%22%20rx%3D%2228%22%20fill%3D%22url%28%23g6%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%221030%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%2300f2fe%22%20opacity%3D%22.10%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22180%22%20cy%3D%22420%22%20r%3D%22190%22%20fill%3D%22%23f59e0b%22%20opacity%3D%22.08%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22190%22%20text-anchor%3D%22middle%22%20font-size%3D%22105%22%3E%F0%9F%92%BB%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22300%22%20text-anchor%3D%22middle%22%20fill%3D%22%2300f2fe%22%20font-family%3D%22Arial%22%20font-size%3D%2240%22%20font-weight%3D%22700%22%3ESANAD%20CYBER%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22365%22%20text-anchor%3D%22middle%22%20fill%3D%22%23e2e8f0%22%20font-family%3D%22Arial%22%20font-size%3D%2230%22%3E%D8%A7%D9%84%D8%A3%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D9%84%20%D9%85%D9%86%D9%87%D8%A7%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22425%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f59e0b%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%3E%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D8%B1%D9%82%D9%85%206%3C/text%3E%0A%20%20%20%20%3C/svg%3E"}, {"title": "مدير كلمات المرور", "icon": "🗝️", "cat": "الحسابات وكلمات المرور", "short": "
+
+const articles=[
+
+{
+id:1,
+cat:"accounts",
+icon:"🔑",
+title:"كلمات المرور القوية",
+short:"كيف تنشئ كلمة مرور يصعب تخمينها؟",
+text:`
+<h2>ما هي كلمة المرور القوية؟</h2>
+<p>
+كلمة المرور هي أول حاجز بين حسابك والأشخاص الذين يحاولون الوصول إليه.
+كلما كانت قصيرة أو سهلة، أصبح من الأسهل تخمينها أو اكتشافها.
+</p>
+<p>
+الأفضل استعمال كلمة مرور طويلة وفريدة لكل حساب مهم.
+تجنب اسمك، تاريخ ميلادك، رقم هاتفك، أو كلمات معروفة.
+</p>
+<h2>ماذا تفعل؟</h2>
+<ul>
+<li>استعمل كلمة مرور مختلفة لكل حساب.</li>
+<li>اجعلها طويلة وفريدة.</li>
+<li>لا ترسلها لأي شخص.</li>
+<li>لا تحفظها في مكان مكشوف.</li>
+</ul>
+<div class="tip">💡 نصيحة سند: طول كلمة المرور وفَرادتها أهم من استعمال رموز عشوائية فقط.</div>
+`
+},
+
+{
+id:2,
+cat:"accounts",
+icon:"🛡️",
+title:"المصادقة الثنائية 2FA",
+short:"طبقة حماية إضافية لحساباتك.",
+text:`
+<h2>ما هي 2FA؟</h2>
+<p>
+المصادقة الثنائية تضيف خطوة ثانية عند تسجيل الدخول.
+حتى إذا عرف شخص كلمة المرور، سيحتاج إلى وسيلة تحقق إضافية.
+</p>
+<h2>لماذا هي مهمة؟</h2>
+<p>
+لأن كلمة المرور وحدها قد تتسرب بسبب التصيد أو تسريب بيانات أحد المواقع.
+وجود طبقة ثانية يقلل خطر الاستيلاء على الحساب.
+</p>
+<ul>
+<li>فعّلها للحسابات المهمة.</li>
+<li>لا تشارك رموز التحقق.</li>
+<li>احتفظ بوسائل الاسترداد في مكان آمن.</li>
+</ul>
+`
+},
+
+{
+id:3,
+cat:"accounts",
+icon:"📧",
+title:"حماية البريد الإلكتروني",
+short:"الإيميل قد يكون مفتاح حساباتك الأخرى.",
+text:`
+<h2>لماذا البريد الإلكتروني مهم؟</h2>
+<p>
+الكثير من الحسابات تستخدم البريد الإلكتروني لاستعادة كلمة المرور.
+إذا فقدت السيطرة على بريدك، قد تتأثر حسابات أخرى مرتبطة به.
+</p>
+<h2>الحماية</h2>
+<ul>
+<li>استعمل كلمة مرور قوية وفريدة.</li>
+<li>فعّل المصادقة الثنائية.</li>
+<li>راجع الأجهزة التي سجلت الدخول.</li>
+<li>لا تدخل بياناتك في صفحات مجهولة.</li>
+</ul>
+`
+},
+
+{
+id:4,
+cat:"accounts",
+icon:"📱",
+title:"حماية حساب واتساب",
+short:"خطوات أساسية لحماية حساب واتساب.",
+text:`
+<h2>حماية واتساب</h2>
+<p>
+حساب واتساب مرتبط برقم هاتفك، ولذلك يجب التعامل بحذر مع رموز التحقق.
+</p>
+<ul>
+<li>فعّل التحقق بخطوتين.</li>
+<li>لا تشارك رمز التسجيل.</li>
+<li>راجع الأجهزة المرتبطة.</li>
+<li>لا تضغط على روابط مجهولة.</li>
+</ul>
+<div class="tip">🚨 إذا وصلك رمز تسجيل لم تطلبه، لا تعطه لأي شخص.</div>
+`
+},
+
+{
+id:5,
+cat:"accounts",
+icon:"🌐",
+title:"حماية حسابات التواصل",
+short:"فيسبوك وإنستغرام والمنصات الاجتماعية.",
+text:`
+<h2>الحسابات الاجتماعية</h2>
+<p>
+حسابات التواصل تحتوي على صور ومحادثات ومعلومات شخصية، لذلك يجب حمايتها.
+</p>
+<ul>
+<li>فعّل 2FA.</li>
+<li>راجع جلسات تسجيل الدخول.</li>
+<li>لا تثق في رسائل الدعم المزيفة.</li>
+<li>تحقق من الروابط قبل تسجيل الدخول.</li>
+</ul>
+`
+},
+
+{
+id:6,
+cat:"accounts",
+icon:"🚪",
+title:"تسجيل الخروج من الأجهزة الغريبة",
+short:"راجع الأجهزة التي تستخدم حسابك.",
+text:`
+<h2>لماذا نراجع الأجهزة؟</h2>
+<p>
+قد يظهر جهاز لا تتعرف عليه بسبب تسجيل دخول قديم أو بسبب وصول شخص آخر إلى الحساب.
+</p>
+<p>
+إذا وجدت نشاطاً غير معروف، سجّل الخروج من الجلسة وغيّر كلمة المرور وفعّل 2FA.
+</p>
+`
+},
+
+{
+id:7,
+cat:"accounts",
+icon:"🔐",
+title:"رموز OTP",
+short:"لا تشارك رمز التحقق.",
+text:`
+<h2>ما هو OTP؟</h2>
+<p>
+OTP هو رمز مؤقت يستخدم للتحقق من هويتك.
+</p>
+<p>
+الشخص الذي يطلب منك هذا الرمز قد يحاول إكمال عملية تسجيل دخول أو استعادة حساب.
+</p>
+<div class="tip">🚨 قاعدة ذهبية: رمز OTP شخصي وسري. لا تعطه لأي شخص.</div>
+`
+},
+
+{
+id:8,
+cat:"accounts",
+icon:"🎣",
+title:"التصيد الإلكتروني",
+short:"تعرف على صفحات تسجيل الدخول المزيفة.",
+text:`
+<h2>ما هو التصيد؟</h2>
+<p>
+التصيد هو محاولة خداع المستخدم حتى يعطي كلمة المرور أو معلومات شخصية في موقع أو رسالة مزيفة.
+</p>
+<h2>علامات الخطر</h2>
+<ul>
+<li>رابط غريب.</li>
+<li>طلب عاجل وغير منطقي.</li>
+<li>أخطاء لغوية كثيرة.</li>
+<li>جائزة أو تهديد لإجبارك على التصرف بسرعة.</li>
+</ul>
+`
+},
+
+{
+id:9,
+cat:"accounts",
+icon:"🎁",
+title:"الجوائز الوهمية",
+short:"احذر من رسائل ربحت جائزة.",
+text:`
+<h2>كيف تعمل الخدعة؟</h2>
+<p>
+قد تصلك رسالة تخبرك أنك ربحت هاتفاً أو مالاً وتطلب منك الضغط على رابط أو تقديم بيانات.
+</p>
+<p>
+لا تثق في الجائزة لمجرد أن الرسالة تحمل شعار شركة معروفة.
+تحقق من المصدر من خلال الموقع الرسمي.
+</p>
+`
+},
+
+{
+id:10,
+cat:"accounts",
+icon:"🧾",
+title:"رسائل الدعم المزيفة",
+short:"ليس كل شخص يقول إنه دعم فني يكون فعلاً دعماً.",
+text:`
+<h2>انتبه</h2>
+<p>
+قد يحاول شخص انتحال شخصية موظف دعم ويطلب كلمة مرورك أو رمز التحقق.
+</p>
+<p>
+الدعم الحقيقي لا يحتاج عادة إلى معرفة كلمة مرورك السرية.
+</p>
+`
+},
+
+{
+id:11,
+cat:"phone",
+icon:"📲",
+title:"تطبيقات APK",
+short:"التطبيقات من المصادر المجهولة قد تكون خطرة.",
+text:`
+<h2>ما المشكلة؟</h2>
+<p>
+ملف APK قد يكون تطبيقاً عادياً، لكنه قد يكون أيضاً معدلاً أو يحتوي على وظائف ضارة.
+لذلك يجب التأكد من مصدر التطبيق قبل تثبيته.
+</p>
+<ul>
+<li>استعمل متاجر موثوقة.</li>
+<li>راجع اسم المطور.</li>
+<li>راجع الصلاحيات.</li>
+<li>تجنب النسخ المعدلة مجهولة المصدر.</li>
+</ul>
+`
+},
+
+{
+id:12,
+cat:"phone",
+icon:"🎤",
+title:"صلاحيات الميكروفون",
+short:"راقب التطبيقات التي تطلب الوصول للميكروفون.",
+text:`
+<h2>الصلاحيات</h2>
+<p>
+التطبيق يجب أن يحصل فقط على الصلاحيات التي يحتاجها فعلاً.
+</p>
+<p>
+إذا كان تطبيق بسيط يطلب صلاحية لا علاقة لها بوظيفته، توقف وفكر قبل السماح.
+</p>
+`
+},
+
+{
+id:13,
+cat:"phone",
+icon:"📷",
+title:"صلاحيات الكاميرا",
+short:"تحقق من التطبيقات التي يمكنها استعمال الكاميرا.",
+text:`
+<h2>الكاميرا</h2>
+<p>
+راجع إعدادات الخصوصية وشاهد التطبيقات التي لديها صلاحية الكاميرا.
+</p>
+<p>
+يمكنك إلغاء الصلاحية عن التطبيقات التي لا تحتاج إليها.
+</p>
+`
+},
+
+{
+id:14,
+cat:"phone",
+icon:"📍",
+title:"صلاحية الموقع",
+short:"لا تمنح الموقع لكل التطبيقات.",
+text:`
+<h2>الموقع الجغرافي</h2>
+<p>
+بيانات الموقع قد تكشف أماكن وجودك وعاداتك اليومية.
+</p>
+<p>
+امنح الصلاحية فقط للتطبيقات التي تحتاج إليها، ويفضل اختيار السماح أثناء الاستخدام عندما يكون ذلك متاحاً.
+</p>
+`
+},
+
+{
+id:15,
+cat:"phone",
+icon:"🔄",
+title:"تحديث الهاتف",
+short:"التحديثات ليست فقط ميزات جديدة.",
+text:`
+<h2>لماذا تحدث جهازك؟</h2>
+<p>
+التحديثات قد تتضمن إصلاحات أمنية مهمة.
+تأجيل التحديثات لفترات طويلة قد يترك الجهاز معرضاً لمشاكل معروفة.
+</p>
+`
+},
+
+{
+id:16,
+cat:"phone",
+icon:"🔒",
+title:"قفل الشاشة",
+short:"أول حماية مادية لهاتفك.",
+text:`
+<h2>قفل الهاتف</h2>
+<p>
+استعمل PIN أو كلمة مرور أو وسيلة قفل مناسبة.
+ولا تشارك رمز القفل مع الآخرين.
+</p>
+`
+},
+
+{
+id:17,
+cat:"phone",
+icon:"☁️",
+title:"النسخ الاحتياطي",
+short:"احمِ صورك وملفاتك المهمة.",
+text:`
+<h2>النسخ الاحتياطي</h2>
+<p>
+النسخة الاحتياطية تساعدك على استرجاع ملفاتك عند فقدان الهاتف أو حدوث مشكلة.
+</p>
+<p>
+يمكن الاحتفاظ بنسخة في خدمة سحابية موثوقة أو وسيط تخزين مناسب.
+</p>
+`
+},
+
+{
+id:18,
+cat:"phone",
+icon:"🔋",
+title:"استنزاف البطارية",
+short:"البطارية وحدها لا تثبت وجود اختراق.",
+text:`
+<h2>هل البطارية دليل على الاختراق؟</h2>
+<p>
+لا. استنزاف البطارية قد يكون بسبب الألعاب، الشاشة، الشبكة، التطبيقات أو البطارية نفسها.
+</p>
+<p>
+إذا لاحظت مشكلة غير عادية، راجع استهلاك البطارية والتطبيقات المثبتة وإعدادات الجهاز.
+</p>
+`
+},
+
+{
+id:19,
+cat:"phone",
+icon:"🌡️",
+title:"سخونة الهاتف",
+short:"السخونة لها أسباب كثيرة.",
+text:`
+<h2>السخونة</h2>
+<p>
+قد يسخن الهاتف أثناء الألعاب أو الشحن أو استعمال الشبكة لفترة طويلة.
+</p>
+<p>
+إذا كانت السخونة متكررة وغير طبيعية، راجع التطبيقات واستهلاك الطاقة وتأكد من تحديث الجهاز.
+</p>
+`
+},
+
+{
+id:20,
+cat:"phone",
+icon:"🧹",
+title:"حذف التطبيقات غير المستخدمة",
+short:"قلل التطبيقات التي لا تحتاج إليها.",
+text:`
+<h2>لماذا نحذف التطبيقات؟</h2>
+<p>
+كل تطبيق إضافي قد يملك صلاحيات ويستهلك مساحة وموارد.
+احذف التطبيقات التي لم تعد تحتاجها، خصوصاً التطبيقات التي لا تتذكر تثبيتها.
+</p>
+`
+},
+
+{
+id:21,
+cat:"internet",
+icon:"📶",
+title:"Wi-Fi العام",
+short:"استخدم الشبكات العامة بحذر.",
+text:`
+<h2>الشبكات العامة</h2>
+<p>
+شبكات Wi-Fi العامة قد تكون مزدحمة أو غير موثوقة.
+تجنب إدخال معلومات شديدة الحساسية عندما لا تكون متأكداً من الشبكة.
+</p>
+`
+},
+
+{
+id:22,
+cat:"internet",
+icon:"🔗",
+title:"الروابط المختصرة",
+short:"الرابط القصير قد يخفي الوجهة.",
+text:`
+<h2>انتبه للروابط</h2>
+<p>
+بعض الخدمات تختصر الرابط، لذلك قد لا تعرف الموقع النهائي قبل فتحه.
+إذا جاءك الرابط من مصدر مجهول، لا تفتحه لمجرد الفضول.
+</p>
+`
+},
+
+{
+id:23,
+cat:"internet",
+icon:"🌍",
+title:"عنوان الموقع",
+short:"تحقق من اسم النطاق.",
+text:`
+<h2>فحص الرابط</h2>
+<p>
+قبل إدخال معلومات حساسة، اقرأ عنوان الموقع بعناية.
+المواقع المزيفة قد تستعمل أسماء قريبة جداً من المواقع الأصلية.
+</p>
+`
+},
+
+{
+id:24,
+cat:"internet",
+icon:"💳",
+title:"التسوق الإلكتروني",
+short:"احمِ بيانات الدفع أثناء الشراء.",
+text:`
+<h2>التسوق الآمن</h2>
+<p>
+اشترِ من مواقع معروفة وتحقق من عنوان الموقع وسياسة الدفع.
+لا ترسل معلومات بطاقتك في رسائل أو نماذج مجهولة.
+</p>
+`
+},
+
+{
+id:25,
+cat:"internet",
+icon:"📥",
+title:"المرفقات",
+short:"لا تفتح الملفات غير المتوقعة.",
+text:`
+<h2>المرفقات المشبوهة</h2>
+<p>
+قد تحتوي الملفات المرسلة من مصادر مجهولة على محتوى ضار.
+إذا لم تكن تنتظر الملف، تحقق من المرسل قبل فتحه.
+</p>
+`
+},
+
+{
+id:26,
+cat:"internet",
+icon:"💬",
+title:"الهندسة الاجتماعية",
+short:"المهاجم قد يستهدف الإنسان قبل الجهاز.",
+text:`
+<h2>ما هي الهندسة الاجتماعية؟</h2>
+<p>
+هي استخدام الخداع والإقناع والتلاعب النفسي للحصول على معلومات أو تنفيذ إجراء.
+</p>
+<p>
+أفضل دفاع هو التمهل والتحقق من هوية الشخص وعدم مشاركة المعلومات السرية.
+</p>
+`
+},
+
+{
+id:27,
+cat:"internet",
+icon:"📨",
+title:"البريد المزعج",
+short:"لا تتفاعل مع الرسائل الغريبة.",
+text:`
+<h2>Spam</h2>
+<p>
+الرسائل المزعجة قد تحتوي على إعلانات غير مرغوبة أو روابط خطرة.
+استخدم أدوات الحظر والإبلاغ ولا تتفاعل معها إذا كانت مشبوهة.
+</p>
+`
+},
+
+{
+id:28,
+cat:"internet",
+icon:"🛑",
+title:"المواقع المزيفة",
+short:"الشكل الجميل لا يعني أن الموقع حقيقي.",
+text:`
+<h2>المواقع المزيفة</h2>
+<p>
+يمكن إنشاء موقع يشبه موقعاً معروفاً بشكل كبير.
+لذلك لا تعتمد على التصميم وحده، بل تحقق من النطاق والمصدر.
+</p>
+`
+},
+
+{
+id:29,
+cat:"internet",
+icon:"📡",
+title:"Bluetooth",
+short:"أغلق الاتصال عندما لا تحتاجه.",
+text:`
+<h2>Bluetooth</h2>
+<p>
+Bluetooth مفيد للأجهزة القريبة، لكن من الأفضل تعطيله عندما لا تحتاج إليه وتقليل قابلية اكتشاف الجهاز حسب إعدادات هاتفك.
+</p>
+`
+},
+
+{
+id:30,
+cat:"internet",
+icon:"📡",
+title:"مشاركة الإنترنت",
+short:"احمِ نقطة الاتصال الخاصة بك.",
+text:`
+<h2>Hotspot</h2>
+<p>
+إذا شاركت اتصال هاتفك، ضع كلمة مرور قوية ولا تترك الشبكة مفتوحة للجميع.
+</p>
+`
+},
+
+{
+id:31,
+cat:"privacy",
+icon:"👁️",
+title:"الخصوصية على الإنترنت",
+short:"فكر قبل نشر معلوماتك.",
+text:`
+<h2>الخصوصية</h2>
+<p>
+المعلومات الصغيرة التي تنشرها قد تتجمع لتكوين صورة كبيرة عنك.
+لا تنشر بيانات شخصية أكثر من اللازم.
+</p>
+`
+},
+
+{
+id:32,
+cat:"privacy",
+icon:"📸",
+title:"الصور الشخصية",
+short:"الصورة قد تحتوي على معلومات أكثر مما تتوقع.",
+text:`
+<h2>قبل نشر الصورة</h2>
+<p>
+راجع الخلفية والمعلومات الظاهرة في الصورة.
+أحياناً يمكن أن تظهر بيانات أو أماكن أو وثائق دون قصد.
+</p>
+`
+},
+
+{
+id:33,
+cat:"privacy",
+icon:"📍",
+title:"مشاركة الموقع",
+short:"لا تنشر موقعك بشكل مستمر.",
+text:`
+<h2>الموقع</h2>
+<p>
+مشاركة موقعك في الوقت الحقيقي قد تكشف مكان وجودك.
+استعمل إعدادات الخصوصية المناسبة.
+</p>
+`
+},
+
+{
+id:34,
+cat:"privacy",
+icon:"👤",
+title:"المعلومات الشخصية",
+short:"احمِ اسمك ورقمك ومعلوماتك.",
+text:`
+<h2>المعلومات الشخصية</h2>
+<p>
+لا تعطي بياناتك لأي موقع أو شخص لمجرد أنه طلبها.
+اسأل نفسك: لماذا يحتاج هذه المعلومة؟
+</p>
+`
+},
+
+{
+id:35,
+cat:"privacy",
+icon:"🧠",
+title:"البصمة الرقمية",
+short:"ما تنشره قد يبقى على الإنترنت.",
+text:`
+<h2>البصمة الرقمية</h2>
+<p>
+نشاطك على الإنترنت يمكن أن يترك أثراً.
+قبل نشر شيء، فكر إذا كنت ستبقى مرتاحاً لو ظهر أمام الآخرين مستقبلاً.
+</p>
+`
+},
+
+{
+id:36,
+cat:"privacy",
+icon:"⚙️",
+title:"إعدادات الخصوصية",
+short:"راجع إعدادات حساباتك.",
+text:`
+<h2>الإعدادات</h2>
+<p>
+خصص وقتاً لمراجعة الخصوصية في حساباتك الاجتماعية والتطبيقات.
+قلل المعلومات التي يمكن للغرباء رؤيتها.
+</p>
+`
+},
+
+{
+id:37,
+cat:"privacy",
+icon:"🔔",
+title:"الإشعارات",
+short:"الإشعار قد يعرض معلوماتك أمام الآخرين.",
+text:`
+<h2>الإشعارات</h2>
+<p>
+يمكنك التحكم في محتوى الإشعارات التي تظهر على شاشة القفل حتى لا تظهر معلومات خاصة أمام الآخرين.
+</p>
+`
+},
+
+{
+id:38,
+cat:"privacy",
+icon:"🗑️",
+title:"حذف الحسابات القديمة",
+short:"الحسابات التي لا تستعملها تستحق المراجعة.",
+text:`
+<h2>الحسابات القديمة</h2>
+<p>
+إذا لم تعد تحتاج حساباً قديماً، راجع إمكانية إغلاقه أو حذف بياناته.
+الحسابات المهجورة قد تبقى مرتبطة بمعلومات قديمة.
+</p>
+`
+},
+
+{
+id:39,
+cat:"privacy",
+icon:"🔎",
+title:"البحث عن معلوماتك",
+short:"راقب المعلومات العامة عنك.",
+text:`
+<h2>مراجعة البصمة الرقمية</h2>
+<p>
+ابحث عن اسم المستخدم أو المعلومات التي تنشرها علناً لمعرفة ما يمكن للآخرين رؤيته.
+</p>
+`
+},
+
+{
+id:40,
+cat:"privacy",
+icon:"🛡️",
+title:"التطبيقات والخصوصية",
+short:"راجع ما تجمعه التطبيقات.",
+text:`
+<h2>الخصوصية داخل التطبيقات</h2>
+<p>
+راجع الصلاحيات وإعدادات الخصوصية، واحذف التطبيقات التي لم تعد تحتاج إليها.
+</p>
+`
+},
+
+{
+id:41,
+cat:"internet",
+icon:"🦠",
+title:"البرمجيات الخبيثة",
+short:"تعرف على مفهوم Malware.",
+text:`
+<h2>ما هي Malware؟</h2>
+<p>
+Malware هو اسم عام لبرمجيات مصممة لإحداث ضرر أو تنفيذ نشاط غير مرغوب فيه.
+</p>
+<p>
+أفضل الوقاية هي تحديث الأجهزة، استعمال مصادر موثوقة، وعدم فتح ملفات مجهولة.
+</p>
+`
+},
+
+{
+id:42,
+cat:"internet",
+icon:"🔐",
+title:"التشفير",
+short:"لماذا نستخدم التشفير؟",
+text:`
+<h2>التشفير</h2>
+<p>
+التشفير يحول البيانات إلى صيغة لا يمكن قراءتها بسهولة دون مفتاح أو وسيلة فك مناسبة.
+يستخدم لحماية الاتصالات والملفات في كثير من الخدمات.
+</p>
+`
+},
+
+{
+id:43,
+cat:"internet",
+icon:"🧩",
+title:"تحديث التطبيقات",
+short:"التطبيقات تحتاج تحديثات أمنية أيضاً.",
+text:`
+<h2>التحديث</h2>
+<p>
+لا يكفي تحديث نظام الهاتف فقط.
+التطبيقات نفسها قد تحتاج إلى إصلاحات أمنية وتحديثات.
+</p>
+`
+},
+
+{
+id:44,
+cat:"internet",
+icon:"💾",
+title:"ملفات النسخ الاحتياطي",
+short:"لا تجعل ملفك الوحيد في جهاز واحد.",
+text:`
+<h2>قاعدة النسخ الاحتياطي</h2>
+<p>
+إذا كان الملف مهماً جداً، من الأفضل الاحتفاظ بنسخة إضافية في مكان موثوق.
+</p>
+`
+},
+
+{
+id:45,
+cat:"internet",
+icon:"🚨",
+title:"ماذا تفعل عند الاشتباه باختراق؟",
+short:"خطوات أولية آمنة.",
+text:`
+<h2>إذا شككت في وجود مشكلة</h2>
+<ul>
+<li>لا تعطِ أي رموز أو كلمات مرور.</li>
+<li>غيّر كلمات المرور من جهاز موثوق.</li>
+<li>فعّل المصادقة الثنائية.</li>
+<li>راجع جلسات تسجيل الدخول.</li>
+<li>حدّث الجهاز.</li>
+<li>اطلب مساعدة شخص بالغ موثوق أو الدعم الرسمي للخدمة.</li>
+</ul>
+`
+},
+
+{
+id:46,
+cat:"accounts",
+icon:"🔄",
+title:"استعادة الحساب",
+short:"جهز وسائل الاسترداد قبل حدوث المشكلة.",
+text:`
+<h2>الاسترداد</h2>
+<p>
+راجع بريد الاسترداد ورقم الهاتف ووسائل الأمان المرتبطة بحسابك.
+لا تنتظر حتى تفقد الحساب لتكتشف أن معلومات الاسترداد قديمة.
+</p>
+`
+},
+
+{
+id:47,
+cat:"accounts",
+icon:"🗝️",
+title:"مدير كلمات المرور",
+short:"أداة تساعدك على إدارة كلمات مرور كثيرة.",
+text:`
+<h2>مدير كلمات المرور</h2>
+<p>
+يمكن لمدير كلمات المرور الموثوق مساعدتك على إنشاء وحفظ كلمات مرور مختلفة.
+احرص على حماية الحساب الرئيسي للمدير بشكل قوي.
+</p>
+`
+},
+
+{
+id:48,
+cat:"phone",
+icon:"🤖",
+title:"حماية Android",
+short:"أساسيات حماية أجهزة Android.",
+text:`
+<h2>Android</h2>
+<ul>
+<li>حدث النظام.</li>
+<li>ثبت التطبيقات من مصادر موثوقة.</li>
+<li>راجع الصلاحيات.</li>
+<li>استعمل قفل شاشة.</li>
+<li>راجع التطبيقات المثبتة.</li>
+</ul>
+`
+},
+
+{
+id:49,
+cat:"phone",
+icon:"🍎",ة في خدمات أخرى. لذلك اجعل لكل حساب مهم كلمة مختلفة.", "tip": "ابدأ بالبريد الإلكتروني والحسابات التي تحتوي على معلومات شخصية مهمة.", "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221200%22%20height%3D%22500%22%20viewBox%3D%220%200%201200%20500%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g2%22%20x1%3D%220%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%230f172a%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23164e63%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%221200%22%20height%3D%22500%22%20rx%3D%2228%22%20fill%3D%22url%28%23g2%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%221030%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%2300f2fe%22%20opacity%3D%22.10%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22180%22%20cy%3D%22420%22%20r%3D%22190%22%20fill%3D%22%23f59e0b%22%20opacity%3D%22.08%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22190%22%20text-anchor%3D%22middle%22%20font-size%3D%22105%22%3E%F0%9F%94%91%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22300%22%20text-anchor%3D%22middle%22%20fill%3D%22%2300f2fe%22%20font-family%3D%22Arial%22%20font-size%3D%2240%22%20font-weight%3D%22700%22%3ESANAD%20CYBER%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22365%22%20text-anchor%3D%22middle%22%20fill%3D%22%23e2e8f0%22%20font-family%3D%22Arial%22%20font-size%3D%2230%22%3E%D9%84%D9%85%D8%A7%D8%B0%D8%A7%20%D9%84%D8%A7%20%D9%86%D8%B3%D8%AA%D8%B9%D9%85%D9%84%20%D9%86%D9%81%D8%B3%20%D9%83%D9%84%D9%85%D8%A9%20%D8%A7%D9%84%D8%B3%D8%B1%D8%9F%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22425%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f59e0b%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%3E%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D8%B1%D9%82%D9%85%202%3C/text%3E%0A%20%20%20%20%3C/svg%3E"}, {"title": "المصادقة الثنائية 2FA", "icon": "🛡️", "cat": "الحسابات وكلمات المرور", "short": "المصادقة الثنائية تضيف خطوة تحقق ثانية بعد كلمة المرور.", "body": "حتى إذا عرف شخص كلمة المرور، يحتاج إلى وسيلة التحقق الثانية. يمكن أن تكون تطبيق مصادقة أو وسيلة أخرى تدعمها الخدمة.", "tip": "فعّل 2FA خصوصاً للبريد الإلكتروني وحسابات التواصل والحسابات المهمة.", "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221200%22%20height%3D%22500%22%20viewBox%3D%220%200%201200%20500%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g3%22%20x1%3D%220%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%230f172a%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23164e63%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%221200%22%20height%3D%22500%22%20rx%3D%2228%22%20fill%3D%22url%28%23g3%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%221030%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%2300f2fe%22%20opacity%3D%22.10%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22180%22%20cy%3D%22420%22%20r%3D%22190%22%20fill%3D%22%23f59e0b%22%20opacity%3D%22.08%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22190%22%20text-anchor%3D%22middle%22%20font-size%3D%22105%22%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22300%22%20text-anchor%3D%22middle%22%20fill%3D%22%2300f2fe%22%20font-family%3D%22Arial%22%20font-size%3D%2240%22%20font-weight%3D%22700%22%3ESANAD%20CYBER%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22365%22%20text-anchor%3D%22middle%22%20fill%3D%22%23e2e8f0%22%20font-family%3D%22Arial%22%20font-size%3D%2230%22%3E%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%AF%D9%82%D8%A9%20%D8%A7%D9%84%D8%AB%D9%86%D8%A7%D8%A6%D9%8A%D8%A9%202FA%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22425%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f59e0b%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%3E%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D8%B1%D9%82%D9%85%203%3C/text%3E%0A%20%20%20%20%3C/svg%3E"}, {"title": "رمز OTP", "icon": "🔢", "cat": "الحسابات وكلمات المرور", "short": "رمز OTP رمز مؤقت يستخدم للتحقق من محاولة تسجيل دخول أو تغيير إعدادات الحساب.", "body": "أي شخص يطلب منك رمزاً وصلك للتو قد يحاول إكمال عملية بدأها على حسابك. شركات الدعم الحقيقية لا تحتاج عادة إلى معرفة رمزك السري.", "tip": "لا تشارك OTP مع أي شخص، وتعامل مع وصول رمز غير متوقع كإشارة تستحق التحقق.", "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221200%22%20height%3D%22500%22%20viewBox%3D%220%200%201200%20500%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g4%22%20x1%3D%220%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%230f172a%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23164e63%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%221200%22%20height%3D%22500%22%20rx%3D%2228%22%20fill%3D%22url%28%23g4%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%221030%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%2300f2fe%22%20opacity%3D%22.10%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22180%22%20cy%3D%22420%22%20r%3D%22190%22%20fill%3D%22%23f59e0b%22%20opacity%3D%22.08%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22190%22%20text-anchor%3D%22middle%22%20font-size%3D%22105%22%3E%F0%9F%94%A2%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22300%22%20text-anchor%3D%22middle%22%20fill%3D%22%2300f2fe%22%20font-family%3D%22Arial%22%20font-size%3D%2240%22%20font-weight%3D%22700%22%3ESANAD%20CYBER%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22365%22%20text-anchor%3D%22middle%22%20fill%3D%22%23e2e8f0%22%20font-family%3D%22Arial%22%20font-size%3D%2230%22%3E%D8%B1%D9%85%D8%B2%20OTP%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22425%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f59e0b%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%3E%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D8%B1%D9%82%D9%85%204%3C/text%3E%0A%20%20%20%20%3C/svg%3E"}, {"title": "حماية البريد الإلكتروني", "icon": "📧", "cat": "الحسابات وكلمات المرور", "short": "البريد الإلكتروني غالباً هو مفتاح استعادة الكثير من الحسابات.", "body": "إذا تمكن شخص من الوصول إلى بريدك فقد يحاول إعادة تعيين كلمات مرور خدمات أخرى. لذلك يجب أن يكون البريد محمياً جيداً بكلمة مرور فريدة و2FA.", "tip": "راجع وسائل الاسترداد والأجهزة والجلسات النشطة من إعدادات الخدمة.", "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221200%22%20height%3D%22500%22%20viewBox%3D%220%200%201200%20500%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g5%22%20x1%3D%220%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%230f172a%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23164e63%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%221200%22%20height%3D%22500%22%20rx%3D%2228%22%20fill%3D%22url%28%23g5%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%221030%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%2300f2fe%22%20opacity%3D%22.10%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22180%22%20cy%3D%22420%22%20r%3D%22190%22%20fill%3D%22%23f59e0b%22%20opacity%3D%22.08%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22190%22%20text-anchor%3D%22middle%22%20font-size%3D%22105%22%3E%F0%9F%93%A7%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22300%22%20text-anchor%3D%22middle%22%20fill%3D%22%2300f2fe%22%20font-family%3D%22Arial%22%20font-size%3D%2240%22%20font-weight%3D%22700%22%3ESANAD%20CYBER%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22365%22%20text-anchor%3D%22middle%22%20fill%3D%22%23e2e8f0%22%20font-family%3D%22Arial%22%20font-size%3D%2230%22%3E%D8%AD%D9%85%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22425%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f59e0b%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%3E%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D8%B1%D9%82%D9%85%205%3C/text%3E%0A%20%20%20%20%3C/svg%3E"}, {"title": "الأجهزة المسجل منها الدخول", "icon": "💻", "cat": "الحسابات وكلمات المرور", "short": "معظم الخدمات تعرض الأجهزة أو الجلسات التي استعملت حسابك.", "body": "مراجعة هذه القائمة تساعدك على ملاحظة جهاز لا تعرفه أو جلسة قديمة نسيتها. لا تعتمد على الإشعارات وحدها.", "tip": "إذا وجدت نشاطاً غير معروف، استخدم أدوات الأمان الرسمية وغيّر كلمة المرور من جهاز موثوق.", "image": "data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221200%22%20height%3D%22500%22%20viewBox%3D%220%200%201200%20500%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g6%22%20x1%3D%220%22%20x2%3D%221%22%3E%3Cstop%20stop-color%3D%22%230f172a%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23164e63%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%221200%22%20height%3D%22500%22%20rx%3D%2228%22%20fill%3D%22url%28%23g6%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%221030%22%20cy%3D%22110%22%20r%3D%22150%22%20fill%3D%22%2300f2fe%22%20opacity%3D%22.10%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22180%22%20cy%3D%22420%22%20r%3D%22190%22%20fill%3D%22%23f59e0b%22%20opacity%3D%22.08%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22190%22%20text-anchor%3D%22middle%22%20font-size%3D%22105%22%3E%F0%9F%92%BB%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22300%22%20text-anchor%3D%22middle%22%20fill%3D%22%2300f2fe%22%20font-family%3D%22Arial%22%20font-size%3D%2240%22%20font-weight%3D%22700%22%3ESANAD%20CYBER%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22365%22%20text-anchor%3D%22middle%22%20fill%3D%22%23e2e8f0%22%20font-family%3D%22Arial%22%20font-size%3D%2230%22%3E%D8%A7%D9%84%D8%A3%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D9%84%20%D9%85%D9%86%D9%87%D8%A7%20%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22600%22%20y%3D%22425%22%20text-anchor%3D%22middle%22%20fill%3D%22%23f59e0b%22%20font-family%3D%22Arial%22%20font-size%3D%2224%22%3E%D9%85%D9%88%D8%B6%D9%88%D8%B9%20%D8%B1%D9%82%D9%85%206%3C/text%3E%0A%20%20%20%20%3C/svg%3E"}, {"title": "مدير كلمات المرور", "icon": "🗝️", "cat": "الحسابات وكلمات المرور", "short": "
